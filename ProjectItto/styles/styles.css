@@ -1,0 +1,106 @@
+.background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.topic-bar {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #003092;
+    opacity: 0.6;
+}
+
+#main { 
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 10vh;
+    width: 100%;
+}
+
+.topic {
+    color: white;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+#left-side {
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    top: 10vh;
+    left: 0; 
+    height: 100%;
+    width: 10vh;
+}
+
+#left-side > div {
+    
+    color: white;
+    margin: 10px; 
+    gap: 10px;
+}
+
+#logo {
+    flex: 1;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 65px;
+    z-index: 1;
+    
+}
+
+@media(max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+  
+    #left-side {
+        height: 100%;
+        width: 60px;
+        background-color: #A6CDC6;
+        opacity: 0.2;
+    }
+    #main {
+        background-color: #A6CDC6;
+        opacity: 0.2;
+        padding-left: 40px;
+        gap: 10px;
+    }
+
+    #main > div {
+        color: black;
+        font-weight: 900;
+        font-size: 1.2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+    }
+
+    #logo {
+        left: 6px;
+        width: 60px;     
+    }
+
+    body{
+        background: url('../images/Mondstadt.jpeg');
+    }
+}
