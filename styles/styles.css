@@ -2,9 +2,11 @@ body {
     background-image: url(../images/wallpaper.png);
 }
 
-.main {
-    display: flex;
+@font-face {
+    font-family: zh-cn;
+    src: url("/Genshin-Impact-Font/zh-cn.ttf");
 }
+
 .center-bar {
     display: flex;
     justify-content: center;
@@ -15,8 +17,22 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 30, 092, 0.6);
-    
+    background-color: rgba(0, 30, 092, 0.6);   
+}
+
+.center-bar a:hover {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #00879E;
+    cursor: pointer;
+}
+
+
+.container {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    border: 10px solid brown;
 }
 
 @keyframes socialbutton {
@@ -28,13 +44,6 @@ body {
         transform: translateY(-100px);
     }
 }
-.socials {
-    animation-name: socialbutton;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-}
 
 .socials {
     display: flex;
@@ -42,12 +51,22 @@ body {
     align-items: flex-start;
     position: absolute;
     bottom: 17px;
-    left: 50px;
+    left: 57px;
     z-index: -1;
+
+    animation-name: socialbutton;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
-.social img {
+.social-img {
     height: 30px;
+}
+
+.social-img:hover {
+    box-shadow: 0 0 40px black;
 }
 
 
@@ -67,25 +86,24 @@ body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-direction: normal;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00879E;
 }
 
 .logo {
     width: 100px;
     height: 100px;
     position: absolute;
-    left: 20px;
+    left: 24px;
     bottom: 10px;
 }
 
-button {
-    font-family: 'Lilita One', serif;
+.button {
+    font-family: 'zh-cn', serif;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 900;
     color: white;
-    opacity: 1;
-    background-color: transparent;
-    border-style: none;
-    border: 50px;
+    opacity: 1;  
 }
 
 @media(max-width: 480px) {
