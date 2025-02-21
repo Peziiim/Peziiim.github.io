@@ -181,23 +181,20 @@
 @keyframes pikachu {
     from {
         transform: translateX(0);
-        opacity: 0;
+        opacity: 0.5;
     }
 
     to {
-        transform: translateX(200px);
+        transform: translateX(2000px);
         opacity: 1;
     }
  
 }
 
-.pikachu{
-    animation: pikachu 4s ;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+.pikachu:hover{
+        animation: pikachu;
+        animation-duration: 10s;
+
 }
 
 .container h1:hover {
@@ -214,7 +211,7 @@
 }
 
 
-.logo:hover {
+.logo-img:hover {
     animation-name: rotate;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
