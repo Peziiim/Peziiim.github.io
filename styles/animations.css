@@ -175,8 +175,34 @@
     51%,100% {
         transform: translateX(340px);
     }
+
 }
 
+@keyframes pikachu {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(200px);
+        opacity: 1;
+    }
+ 
+}
+
+.pikachu{
+    animation: pikachu 4s ;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.container h1:hover {
+    text-shadow:0 0 20px rgba(0, 30, 092); ;
+}
 #subtitle:hover {
     text-decoration: line-through;
 }
