@@ -1,0 +1,255 @@
+@keyframes slide-in {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-400px);
+    }
+
+    80% {
+        transform: translateY(20px);
+    }
+
+    81%{
+        transform: translateY(21px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes socialbutton {
+    from {  
+        transform: translateY(0);
+    }
+    
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes move {
+    
+}
+
+
+
+@keyframes writing-creativity {
+    0% {
+        content: "";
+        }
+    
+    6.5% {
+        content: "C";
+    }
+
+    13% {
+        content: "Cr";
+    }
+
+    19.5% {
+        content: "Cre";
+    }
+
+    26% {
+        content: "Crea";
+    }
+
+    32.5% {
+        content: "Creat";
+    }
+
+    39%{
+        content: "Creati";
+    }
+
+    45.5%{
+        content: "Creativ";
+
+    }
+
+    52% {
+        content: "Creativid";
+    }
+
+    59%{
+        content: "Creativi";
+    }
+
+
+    65.5% {
+        content: "Creativit"
+    }
+    72% {
+        content: "Creativity"
+    }
+
+    79% {
+        content: "";
+        }
+    
+    85.5% {
+        content: "F";
+    }
+
+    92% {
+        content: "Fu";
+    }
+
+    100% {
+        content: "Fun";
+    }
+
+}
+
+@keyframes writing {
+    0% {
+        content: "";
+        }
+    
+    16.5% {
+        content: "&";
+    }
+
+    33% {
+        content: "";
+    }
+
+    49.5% {
+        content: "w";
+    }
+
+    66% {
+        content: "wi";
+    }
+
+    82.5% {
+        content: "wit";
+    }
+
+    100%{
+        content: "with";
+    }
+}
+
+
+@keyframes cursor {
+    0%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes move {
+    0%,50% {
+        transform: translateX(0);
+    }
+
+    51%,100% {
+        transform: translateX(340px);
+    }
+}
+
+#subtitle:hover {
+    text-decoration: line-through;
+}
+
+
+.social-img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 70px rgba(255, 255, 255, 1);
+}
+
+
+.logo:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00879E;
+}
+
+.center-bar a:hover {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #00879E;
+    cursor: pointer;
+}
+
+
+.container h1 {
+    animation-name: slide-in-top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+
+.creativity::before {
+    content: "";
+    animation: writing-creativity 7s infinite ;
+
+}
+
+.creativity::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    bottom: 10px;
+    border-left: 2px solid white;
+    margin-left: 30px;
+    animation: cursor .8s infinite;
+    width: calc(100% + 15px);
+     
+}
+
+
+.socials {
+    animation-name: socialbutton;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+
+#me {
+
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
