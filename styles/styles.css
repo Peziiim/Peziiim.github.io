@@ -5,7 +5,8 @@
 
 body {
     background-image: url(../images/wallpaper.png);
-    height: 500vh;
+    background-repeat: no-repeat;
+    height: 400vh;
 }
 
 .center-bar {
