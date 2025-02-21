@@ -1,59 +1,87 @@
 body {
     background-image: url(../images/wallpaper.png);
+    height: 10000px;
 }
 
-@font-face {
-    font-family: zh-cn;
-    src: url("/Genshin-Impact-Font/zh-cn.ttf");
-}
 
 .center-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
     width: 100%;
-    height: 11%;
+    height: 12%;
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(0, 30, 092, 0.6);   
 }
 
-.center-bar a:hover {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 5px solid #00879E;
-    cursor: pointer;
+.center-bar a {
+    position: relative;
+    left: 59%;
+    top: 35%;
+    padding: 25px;
 }
+
+#me {
+    position: absolute;
+    bottom: 87.5%;
+    left: 1.5%;
+    font-size: 3rem;
+    color: antiquewhite;
+
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+#subtitle {
+    position: absolute;
+    bottom: 86.5%;
+    left: 17%;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    animation-name: visible;
+    animation-duration: 3s;
+    z-index: 1;
+}
+
 
 
 .container {
     position: absolute;
-    left: 60%;
-    top: 20%;
+    left: 9%;
+    top: 15%;
+    width: 85%;
+    height: 75%;
     border: 10px solid brown;
 }
 
-@keyframes socialbutton {
-    from {  
-        transform: translateY(0);
-    }
+.container h1 {
+    position: relative;
+    bottom: 50px;
+    font-family: zh-cn, serif;
+    color: white;
+    font-style: italic;
+    font-size: 5rem;
 
-    to {
-        transform: translateY(-100px);
-    }
+    animation-name: slide-in-top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
+
 
 .socials {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    bottom: 17px;
-    left: 57px;
-    z-index: -1;
-
+    position: fixed;
+    bottom: 15px;
+    left: 55.5px;
+    z-index: 1;
+    
     animation-name: socialbutton;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -62,23 +90,117 @@ body {
 }
 
 .social-img {
-    height: 30px;
+    height: 35px;
+    
 }
 
-.social-img:hover {
-    box-shadow: 0 0 40px black;
+.logo {
+    position: fixed;
+    top: 85%;
+    bottom: 0;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
 }
 
 
+.button {
+    font-family: 'zh-cn', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: white;
+    opacity: 1;  
+}
+
+footer {
+    position: absolute;
+    bottom: -100%;
+    left: 70%;
+    height: 4%;    
+    width: 30%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    
+}
+
+@font-face {
+    font-family: zh-cn;
+    src: url("/Genshin-Impact-Font/zh-cn.ttf");
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-400px);
+    }
+
+    80% {
+        transform: translateY(20px);
+    }
+
+    81%{
+        transform: translateY(21px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 @keyframes rotate{
     0%{
         transform: rotate(0);
     }
-
+    
     100%{
         transform: rotate(360deg);
     }
 }
+
+@keyframes socialbutton {
+    from {  
+        transform: translateY(0);
+    }
+    
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+.container h1:hover {
+   color: saddlebrown;
+   text-shadow: 0 0 10px saddlebrown;
+}
+
+#subtitle:hover {
+    text-decoration: line-through;
+}
+
+.social-img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 70px rgba(255, 255, 255, 1);
+}
+
 
 .logo:hover {
     animation-name: rotate;
@@ -90,20 +212,11 @@ body {
     box-shadow: 0 0 20px #00879E;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 24px;
-    bottom: 10px;
-}
-
-.button {
-    font-family: 'zh-cn', serif;
-    font-size: 1.3rem;
-    font-weight: 900;
-    color: white;
-    opacity: 1;  
+.center-bar a:hover {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #00879E;
+    cursor: pointer;
 }
 
 @media(max-width: 480px) {
