@@ -9,17 +9,7 @@
         }
     }
     
-    @keyframes socialbutton {
-        from {  
-            transform: translateY(0);
-        }
-        
-        to {
-            transform: translateY(100px);
-        }
-    }
-        
-    
+
     
     @keyframes writing-creativity {
         0% {
@@ -158,15 +148,6 @@
         animation: cursor .8s infinite;
         width: calc(100% + 15px);
          
-    }
-    
-    
-    .socials {
-        animation-name: socialbutton;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
     }
     
 }  
