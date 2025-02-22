@@ -1,14 +1,4 @@
 @media (max-width:780px) {
-    @keyframes rotate{
-        0%{
-            transform: rotate(0);
-        }
-        
-        100%{
-            transform: rotate(360deg);
-        }
-    }
-    
 
     
     @keyframes writing-creativity {
@@ -98,23 +88,6 @@
         }
         
     }
-    
-    
-    .social-img:active {
-        border-radius: 50%;
-        box-shadow: 0 0 70px rgba(255, 255, 255, 1);
-    }
-    
-    .logo-img:active {
-        animation-name: rotate;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        border-radius: 50%;
-        box-shadow: 0 0 20px #00879E;
-    }
-    
     
     .creativity::before {
         content: "";
