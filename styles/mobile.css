@@ -184,7 +184,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        align-items: start;
+        align-items: center;
         width: 80%;
         height: 80%;
      
@@ -193,7 +193,7 @@ footer {
     .container h1 {
         position: relative;
         text-align: center;
-        top: 10%;
+        top: 15%;
         font-family: zh-cn, serif;
         color: white;
         font-style: italic;
@@ -217,13 +217,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
-        bottom: 15%;
+        top: 600px;
         left: 30px;
     
     }
     .logo-img {
         position: fixed;
-        bottom: 100vh;
+        top: 710px;
         left: 15px;
         width: 65px;
         height: 65px;
