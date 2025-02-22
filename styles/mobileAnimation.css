@@ -1,0 +1,172 @@
+@media (max-width:780px) {
+    @keyframes rotate{
+        0%{
+            transform: rotate(0);
+        }
+        
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes socialbutton {
+        from {  
+            transform: translateY(0);
+        }
+        
+        to {
+            transform: translateY(100px);
+        }
+    }
+        
+    
+    
+    @keyframes writing-creativity {
+        0% {
+            content: " ";
+            }
+        
+        6.5% {
+            content: "FullStack";
+        }
+    
+        13% {
+            content: "FullStac";
+        }
+    
+        19.5% {
+            content: "FullSta";
+        }
+    
+        26% {
+            content: "FullSt";
+        }
+    
+        32.5% {
+            content: "FullS";
+        }
+    
+        39%{
+            content: "Full";
+        }
+    
+        45.5%{
+            content: "Ful";
+    
+        }
+    
+        52% {
+            content: "Fu";
+        }
+    
+        59%{
+            content: "F";
+        }
+    
+        63.5% {
+            content: " "; 
+        }
+    
+        68% {
+            content: "3"
+        }
+    
+        72.5% {
+            content: "3D"
+        }
+    
+        77% {
+            content: "3D a";
+            }
+        
+        81.5% {
+            content: "3D ar";
+        }
+    
+        86% {
+            content: "3D art";
+        }
+    
+        90.5% {
+            content: "3D arti"
+        }
+    
+        95% {
+            content: "3D artis";
+        }
+    
+        100% {
+            content: "3D artist";
+        }
+    
+    }
+    
+    
+    @keyframes cursor {
+        0%{
+            opacity: 0;
+        }
+        
+    }
+    
+    
+    
+    .container h1:active {
+        text-shadow:0 0 70px rgba(0, 30, 092); ;
+    }
+    #subtitle:active {
+        text-decoration: line-through;
+    }
+    
+    
+    .social-img:active {
+        border-radius: 50%;
+        box-shadow: 0 0 70px rgba(255, 255, 255, 1);
+    }
+    
+    .logo-img:active {
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        border-radius: 50%;
+        box-shadow: 0 0 20px #00879E;
+    }
+    
+    .center-bar a:active {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-right: 5px solid #00879E;
+        cursor: pointer;
+    }
+    
+    
+    .creativity::before {
+        content: "";
+        animation: writing-creativity 7s infinite ;
+    
+    }
+    
+    .creativity::after {
+        content: "";
+        position: absolute;
+        height: 80%;
+        bottom: 10px;
+        border-left: 2px solid white;
+        margin-left: 30px;
+        animation: cursor .8s infinite;
+        width: calc(100% + 15px);
+         
+    }
+    
+    
+    .socials {
+        animation-name: socialbutton;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    
+}  

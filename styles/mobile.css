@@ -1,0 +1,258 @@
+@media(max-width: 1080px) {
+
+.center-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+    height: 40%;
+}
+
+.center-bar a {
+    font-family: zh-cn, serif;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    width: 10%;
+    z-index: 1;
+}
+
+#me {
+    position: absolute;
+    bottom: 33%;
+    left: 10%;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    z-index: 1;
+}
+
+#subtitle {
+    position: absolute;
+    bottom: 28%;
+    left: 10.5%;
+    color: white;
+    font-size: 1.2rem;
+ 
+}
+
+.container {
+    position: absolute;
+    left: 10%;
+    right: 0;
+    top: 22%;
+    width: 80%;
+    height: 80%;
+ 
+}
+
+.container h1 {
+    position: relative;
+    text-align: start;
+    font-family: zh-cn, serif;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 6rem;  
+    margin: 0; 
+}
+
+.demonstrations {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 500px;
+}
+
+.demo1 {
+    height: 600px;
+    width: 500px;
+}
+
+.demo2 {
+    position: relative;
+    bottom: 110%;
+    left: 48%;
+    height: 300px;
+    width: 400px;
+    z-index: 0;
+}
+
+.creativity{
+    position: relative;
+    font-size: 8rem;
+}
+
+.social-img {
+    height: 35px;   
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 120px;
+    left: 55.5px;
+
+}
+.logo-img {
+    position: fixed;
+    top: 85%;
+    bottom: 0;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.button {
+    font-family: 'zh-cn', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: white;
+    opacity: 1;  
+}
+
+footer {
+    position: relative;
+    top: 100%;
+    left: 80.5%;    
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 1;   
+}
+
+
+    
+}
+
+
+
+
+@media(max-width: 780px) {
+    body {
+        width: 100%;
+        height: 400vh;
+    }
+    .center-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        top: 3%;
+        width: 80vw;
+        height: 200px;
+    }
+    
+    .center-bar a {
+        font-family: zh-cn, serif;
+        color: white;
+        font-weight: 900;
+        font-size: 15px;
+        width: 10%;
+        z-index: 1;
+    }
+    
+    #me {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        font-size: 1.5rem;
+        color: antiquewhite;
+        z-index: 1;
+    }
+    
+    #subtitle {
+        position: absolute;
+        top: 68%;
+        left: 10.5%;
+        color: white;
+        font-size: 1.2rem;
+     
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 80%;
+        height: 80%;
+     
+    }
+    
+    .container h1 {
+        position: relative;
+        text-align: center;
+        top: 10%;
+        font-family: zh-cn, serif;
+        color: white;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 4rem;  
+        margin: 0; 
+    }
+    
+    
+    .creativity{
+        position: relative;
+        font-size: 4rem;
+    }
+    
+    .social-img {
+        height: 30px;   
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        bottom: 15%;
+        left: 30px;
+    
+    }
+    .logo-img {
+        position: fixed;
+        bottom: 100vh;
+        left: 15px;
+        width: 65px;
+        height: 65px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    
+    .button {
+        font-family: 'zh-cn', serif;
+        font-size: 1.3rem;
+        font-weight: 900;
+        color: white;
+        opacity: 1;  
+    }
+    
+    footer {
+        position: relative;
+        top: 100%;
+        left: 80.5%;    
+        width: 20%;
+        text-align: center;
+        color: white;
+        background-color: black;
+        opacity: 1;   
+    }
+    
+    .demonstrations{
+        display: none;
+    }
+        
+    }
