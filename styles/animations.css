@@ -63,100 +63,82 @@
 
 @keyframes writing-creativity {
     0% {
-        content: "";
+        content: " ";
         }
     
     6.5% {
-        content: "C";
+        content: "FullStack";
     }
 
     13% {
-        content: "Cr";
+        content: "FullStac";
     }
 
     19.5% {
-        content: "Cre";
+        content: "FullSta";
     }
 
     26% {
-        content: "Crea";
+        content: "FullSt";
     }
 
     32.5% {
-        content: "Creat";
+        content: "FullS";
     }
 
     39%{
-        content: "Creati";
+        content: "Full";
     }
 
     45.5%{
-        content: "Creativ";
+        content: "Ful";
 
     }
 
     52% {
-        content: "Creativid";
-    }
-
-    59%{
-        content: "Creativi";
-    }
-
-
-    65.5% {
-        content: "Creativit"
-    }
-    72% {
-        content: "Creativity"
-    }
-
-    79% {
-        content: "";
-        }
-    
-    85.5% {
-        content: "F";
-    }
-
-    92% {
         content: "Fu";
     }
 
-    100% {
-        content: "Fun";
+    59%{
+        content: "F";
     }
 
-}
+    63.5% {
+        content: " "; 
+    }
 
-@keyframes writing {
-    0% {
-        content: "";
+    68% {
+        content: "3"
+    }
+
+    72.5% {
+        content: "3D"
+    }
+
+    77% {
+        content: "3D a";
         }
     
-    16.5% {
-        content: "&";
+    81.5% {
+        content: "3D ar";
     }
 
-    33% {
-        content: "";
+    86% {
+        content: "3D art";
     }
 
-    49.5% {
-        content: "w";
+    90.5% {
+        content: "3D arti"
     }
 
-    66% {
-        content: "wi";
+    95% {
+        content: "3D artis";
     }
 
-    82.5% {
-        content: "wit";
+    100% {
+        content: "3D artist";
     }
 
-    100%{
-        content: "with";
-    }
 }
 
 
@@ -178,24 +160,6 @@
 
 }
 
-@keyframes pikachu {
-    from {
-        transform: translateX(0);
-        opacity: 0.5;
-    }
-
-    to {
-        transform: translateX(2000px);
-        opacity: 1;
-    }
- 
-}
-
-.pikachu:hover{
-        animation: pikachu;
-        animation-duration: 10s;
-
-}
 
 .container h1:hover {
     text-shadow:0 0 20px rgba(0, 30, 092); ;
@@ -276,3 +240,7 @@
     animation-fill-mode: forwards;
 }
 
+#subtitle {
+    animation-name: visible;
+    animation-duration: 3s;
+}

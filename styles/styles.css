@@ -4,29 +4,30 @@
 }
 
 body {
-    background-image: url(../images/wallpaper.png);
+    background-image: url("../images/wallpaper.png");
     background-repeat: no-repeat;
+    background-color: white;
     height: 400vh;
 }
 
 .center-bar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 100%;
+    width: 80%;
     height: 12%;
     position: absolute;
     top: 0;
-    left: 0;
-    background-color: rgba(0, 30, 092, 0.6); 
+    left: 10vw;
+    border-bottom: 2px solid white;
 }
 
 .center-bar a {
     font-family: zh-cn, serif;
     color: white;
     font-weight: 900;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     width: 10%;
     z-index: 1;
@@ -34,48 +35,70 @@ body {
 
 #me {
     position: absolute;
-    bottom: 87.5%;
-    left: 3%;
-    font-size: 3rem;
+    bottom: 33%;
+    left: 10%;
+    font-size: 1.5rem;
     color: antiquewhite;
     z-index: 1;
 }
 
 #subtitle {
     position: absolute;
-    bottom: 86.5%;
-    left: 17%;
-    color: antiquewhite;
+    bottom: 28%;
+    left: 10.5%;
+    color: white;
     font-size: 1.2rem;
-    animation-name: visible;
-    animation-duration: 3s;
-    z-index: 2;
+ 
 }
 
 .container {
     position: absolute;
-    left: 0;
+    left: 10%;
     right: 0;
     top: 22%;
-    width: 99%;
+    width: 80%;
     height: 80%;
  
 }
 
 .container h1 {
     position: relative;
-    text-align: center;
+    text-align: start;
     font-family: zh-cn, serif;
     color: white;
     font-style: italic;
     font-weight: 900;
-    font-size: 7rem;  
+    font-size: 6rem;  
     margin: 0; 
+}
+
+.demonstrations {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 500px;
+}
+
+.demo1 {
+    height: 600px;
+    width: 500px;
+}
+
+.demo2 {
+    position: relative;
+    bottom: 110%;
+    left: 48%;
+    height: 300px;
+    width: 400px;
+    z-index: 0;
 }
 
 .creativity{
     position: relative;
-    font-size: 12rem;
+    font-size: 8rem;
 }
 
 .social-img {
@@ -102,17 +125,6 @@ body {
     cursor: pointer;
 }
 
-.pikachu {
-    position: relative;
-    top: 207px;
-    right: 2022px;
-    padding-right: 120px;
-    padding-left: 2000px;
-    height: 70px;
-    width: 90px;    
-    
-    z-index: -1;
-}
 
 .button {
     font-family: 'zh-cn', serif;
