@@ -35,49 +35,39 @@ body {
 }
 
 .hero {
-    margin: 5vh 0 0 10vw;
+    margin: 15vh 0 0 10vw;
     width: 80vw;
     height: 80vh;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
 .hero-container h1 {
     font-family:"Gelasio", serif;
     font-weight: 800;
-    font-size: 6vw;
     color: white;
+    cursor: default;
+    font-size: 7vw;
 }
 #me {
     font-family:"Gelasio", serif;
     font-weight: 800;
     color: white;
+    cursor: default;
 }
 
 #subtitle {
     font-family:"Gelasio", serif;
     font-weight: 800;
-    color: white
-}
-
-.container-hero {
-    width: 50%;
-    background-color: blueviolet;
-}
-@media (max-width: 779px) {
-  
-
-    .hero-container h1 {   
-        font-size: 3rem;
-
-    }
-    
-
-    .demo1 {
-        height: 35vh;
-        width: 0vw;
-        padding-top: 70px;
-    }
-    
+    color: white;
+    cursor: default;
 }
 
 
