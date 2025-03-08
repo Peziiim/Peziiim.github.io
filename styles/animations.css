@@ -226,16 +226,13 @@
     }
 
     25% {
-        transform: scaleY(1);
+        transform: scaleY(0.75);
     }
 
     50% {
         transform: scaleY(0.50);
     }
 
-    75% {
-        transform: scaleY(0.25);
-    }
 
     100% {
         transform: scaleY(0);
