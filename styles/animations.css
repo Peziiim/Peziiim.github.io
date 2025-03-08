@@ -1,3 +1,6 @@
+@media (min-width: 781px){
+
+
 @keyframes slide-in {
     from {
         transform: translateX(-400px);
@@ -162,9 +165,63 @@
 
 }
 
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
 
-.container h1:hover {
-    text-shadow: 0 0 20px rgba(0, 30, 092);
+    14% {
+        transform: translateX(2px);
+    }
+
+    28% {
+        transform: translateX(-2px);
+    }
+
+    42% {
+        transform: translateX(2px);
+    }
+
+    56% {
+        transform: translateX(-2px);
+    }
+
+    70% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    75% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(25px);
+    }
+
+
+}
+
+
+#title:hover {
+    text-shadow: 0 0 10px rgb(41, 168, 10);
     ;
 }
 
@@ -176,6 +233,11 @@
 .social-img:hover {
     border-radius: 50%;
     box-shadow: 0 0 100px rgba(255, 255, 255, 1);
+    animation-name: down;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 
@@ -190,7 +252,7 @@
 }
 
 
-.container h1 {
+.hero-container h1 {
     animation-name: slide-in-top;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -210,11 +272,19 @@
     content: "";
     position: relative;
     height: 10px;
-    margin-left: 15px;
+    margin-left: 20px;
     border-right: 2px solid white;
     animation: cursor .8s infinite;
     width: calc(100% + 15px);
 
+}
+
+.info {
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 
@@ -230,4 +300,13 @@
 #subtitle {
     animation-name: visible;
     animation-duration: 3s;
+}
+
+.nav-link:hover {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
 }

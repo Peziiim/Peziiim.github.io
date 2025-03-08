@@ -1,8 +1,7 @@
 body {
     background-image: url("../images/wallpaper.png");
-
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #ffffff;
     overflow-x: hidden;
     height: 400vh;
 }
@@ -16,11 +15,33 @@ body {
   }
 
 .header img {
-    margin-left: 2vw;
     height: 3rem;
     width: 2.5rem;
 }
 
+header {
+    margin-left: 10vw;
+    width: 80vw;
+}
+
+#linkedin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.info h4 {
+    font-family: "Gelasio", serif;
+    font-weight: 600;
+    color: white;
+}
+
+#about {
+    margin-right: 30px;
+}
 
 .logo {
     display: flex;
@@ -40,21 +61,13 @@ body {
     height: 80vh;
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
 
 .hero-container h1 {
     font-family:"Gelasio", serif;
     font-weight: 800;
     color: white;
     cursor: default;
-    font-size: 7vw;
+    font-size: 6vw;
 }
 #me {
     font-family:"Gelasio", serif;
@@ -68,6 +81,20 @@ body {
     font-weight: 800;
     color: white;
     cursor: default;
+}
+
+
+@media (max-width: 480px) {
+    .hero-container h1 {
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
