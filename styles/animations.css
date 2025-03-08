@@ -220,9 +220,37 @@
 }
 
 
+@keyframes smash {
+    0% {
+        transform: scaleY(2);
+    }
+
+    25% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.50);
+    }
+
+    75% {
+        transform: scaleY(0.25);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+
+    
+}
+
+
 #title:hover {
-    text-shadow: 0 0 10px rgb(41, 168, 10);
-    ;
+    animation-name: smash;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 #subtitle:hover {
@@ -252,14 +280,7 @@
 }
 
 
-.hero-container h1 {
-    animation-name: slide-in-top;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
 
-}
 
 
 .fullstack::before {
