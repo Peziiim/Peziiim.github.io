@@ -1,13 +1,14 @@
 body {
-    background-image: url("../images/wallpaper.png");
     background-repeat: no-repeat;
     overflow-x: hidden;
     height: 400vh;
 }
 
-.main {
-    height: 98vh;
+#main {
+    position: absolute;
+    top: 0;
 }
+
 .header img {
     height: 3rem;
     width: 2.5rem;
@@ -16,6 +17,7 @@ body {
 header {
     margin-left: 10vw;
     width: 80vw;
+    z-index: 2;
 }
 
 #linkedin {
@@ -34,7 +36,7 @@ header {
     
 }
 
-#about {
+.about {
     margin-right: 20px;
 }
 
@@ -51,7 +53,6 @@ header {
 }
 
 .hero {
-    display: block;
     margin: 15vh 0 0 10vw;
     width: 70vw;
 }
@@ -68,8 +69,8 @@ header {
 
 .hero-images {
     position: absolute;
-    margin-left: 60vw;
-    top: 50vh;
+    margin-left: 10vw;
+
 }
 
 #dino {
@@ -101,19 +102,108 @@ header {
     cursor: default;
 }
 
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.projects {
+    background-color: #1B262C;
+    z-index: -1;
+}
 
-    border: 10px solid green;
+.pr-container {
+    margin-top: 15vh;
+    width: 80vw;
+}
+
+.pr-bar {
+    width: 110vw;
+}
+
+.pr-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 
+#red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
+
+#red img {
+    height: 20px;
+}
+.card-group {
+    gap: 20px;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px #BBE1FA;
+    width: 100%;
+}
+
+.card img {
+    background-color: #f1b67f;
+    transition: transform 0.8s;
+}
 
 
-@media (max-width: 780px) {
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 950;
+    
+}
+.card-body{
+    background-color: #1B262C;
+}
+
+.card-body h5 {
+    color: #BBE1FA;
+}
+.card-body p{
+    color: #3282B8;
+    font-weight: 900;
+}
+
+.button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10px;
+    border-color: #0F4C75 #1B262C;
+    background-color:#0F4C75;
+    font-family:"Gelasio", serif;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button h5 {
+    font-family: 'Gelasio', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+    color: #BBE1FA;
+}
+
+#about {
+    background-color: #0F4C75;
+    margin-top: 15vh;
+    width: 80vw;
+}
+@media (max-width: 810px) {
+
+    #red {
+        margin: 0 0 0 5px;
+    }
     .hero-container h1 {
         font-size: 2.5rem;
         padding-bottom: 20px;
@@ -130,6 +220,7 @@ header {
         display: flex;
         justify-content: center;
     }
+
 }
 
 

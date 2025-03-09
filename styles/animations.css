@@ -241,6 +241,25 @@
     
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+    
+}
+
+.card:hover img{
+    transform: scale(1.05);
+}
 
 #title:hover {
     animation-name: smash;
@@ -321,6 +340,30 @@
 }
 
 .nav-link:hover {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+#red {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+#yellow:hover {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+#green:hover {
     animation-name: shake;
     animation-duration: .5s;
     animation-iteration-count: 1;
