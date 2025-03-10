@@ -5,8 +5,9 @@ body {
 }
 
 #main {
-    position: absolute;
-    top: 0;
+ position: absolute;
+ top: 0;
+ 
 }
 
 .header img {
@@ -44,8 +45,8 @@ header {
     display: flex;
     justify-content: start;
     position: fixed;
-    top: 85%;
-    left: 4vw;
+    top: 86%;
+    left: 2vw;
 }
 
 .logo-img {
@@ -70,6 +71,7 @@ header {
 .hero-images {
     position: absolute;
     margin-left: 10vw;
+    top: 100vh;
 
 }
 
@@ -102,9 +104,10 @@ header {
     cursor: default;
 }
 
-.projects {
+#projects {
+    display: block;
     background-color: #1B262C;
-    z-index: -1;
+ 
 }
 
 .pr-container {
@@ -195,15 +198,16 @@ header {
 }
 
 #about {
-    background-color: #0F4C75;
-    margin-top: 15vh;
+    display: block;
+    background-color: #0F4C75;' '
     width: 80vw;
 }
+
 @media (max-width: 810px) {
 
-    #red {
-        margin: 0 0 0 5px;
-    }
+   .pr-button{
+    display: none;
+   }
     .hero-container h1 {
         font-size: 2.5rem;
         padding-bottom: 20px;
