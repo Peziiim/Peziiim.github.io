@@ -1,7 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-repeat: no-repeat;
     overflow-x: hidden;
     height: 400vh;
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
 
 #main {
@@ -196,8 +205,8 @@ header {
 }
 
 #about {
-    padding-top: 100px;
-    background-color: #0F4C75;
+    padding-top: 20px;
+    background-color: #1B262C;
     width: 100%;
 }
 
@@ -205,17 +214,54 @@ header {
     background-color: grey;
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 #my-photo {
-    display: flex;
-    justify-content: end;
-    flex-wrap: 1;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    rotate: 270deg;
+    height: 13em;
 }
+
+.photos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+ #prev-button, #next-button {
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: transparent;  
+    cursor: pointer;
+}
+
+#next-button img, #prev-button img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider {
+    position: absolute;
+    opacity: 0;
+    transition: .2s;
+
+}
+
+
+.on {
+    opacity: 1;
+}
+
+
 
 @media (max-width: 810px) {
 
@@ -224,19 +270,11 @@ header {
    }
 
    .logo {
-    display: flex;
-    justify-content: start;
-    position: fixed;
-    top: 86%;
-    left: 2vw;
-    z-index: 3;
+    display: none;
 }
 
 .logo-img {
-    height: 5rem;
-    position: fixed;
-    top: 86%;
-    left: 2vw;
+ display: none;
 }
 
     .hero-container h1 {

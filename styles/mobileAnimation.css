@@ -105,4 +105,13 @@
 
     }
 
+    .card {
+        transition: 0.15s;
+        cursor: pointer;
+    }
+    .card-group:hover > :not(:hover) {
+        opacity: .4;
+        transform: scale(.9);
+    }
+    
 }

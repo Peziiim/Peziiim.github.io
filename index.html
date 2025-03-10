@@ -15,12 +15,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Jacquard+12&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script src="./scripts/script.js" defer></script>
 
 </head>
 
 <body>
 
-
+  <div class="wrapper">
   <img src="./images/wallpaper.png" alt="wallpaper genshin">
   <div id="main">
     <header class="header">
@@ -60,65 +61,65 @@
     </section>
   </div>
 
-    <div id="projects" class=" container-fluid d-flex justify-content-center">
-      <section class="pr-container">
-        <div class="pr-bar">
-          <div class="pr-button">
-            <div id="red"><img src="./images/on.png" alt="on and off button"></div>
+  <div id="projects" class=" container-fluid d-flex justify-content-center">
+    <section class="pr-container">
+      <div class="pr-bar">
+        <div class="pr-button">
+          <div id="red"><img src="./images/on.png" alt="on and off button"></div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="./images/3dModel.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
           </div>
         </div>
-        <div class="card-group">
-          <div class="card">
-            <img src="./images/3dModel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/3dModel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/3dModel.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
+        <div class="card">
+          <img src="./images/3dModel.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           </div>
         </div>
-        <div class="button d-flex justify-content-lg-start">
-          <button>
-            <h5>Ver mais</h5>
-          </button>
+        <div class="card">
+          <img src="./images/3dModel.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
         </div>
-      </section>
-      </section>
-    </div>
- 
+      </div>
+      <div class="button d-flex justify-content-lg-start">
+        <button>
+          <h5>Ver mais</h5>
+        </button>
+      </div>
+    </section>
+  </div>
+
   <div class="logo">
     <img class="logo-img" src="./images/logo.png" alt=" paimon logo">
   </div>
 
-  <div id="about" class="d-flex justify-content-center">
-    <section class="me-container row">
-      <div  class="col-12">
-        <h4 class="text-start">This is me</h4>
-        <img id="my-photo" class="col-6" src="./images/eu.png" alt="photo of me">
+  <div id="about" class="d-flex justify-content-center align-itemns-center">
+    <section class="me-container d-flex justify-content-center justify-content-lg-end ">
+      <h4 class="">This is me</h4>
+      <button id="prev-button"><img src="./images/arrowleft.png" alt="arrow left"></button>
+      <div class="photos">
+        <img class="slider on" id="my-photo" src="./images/eu.png" alt="photo of me">
+        <img class="slider" src="./images/dog.png" alt="my dog photo">
       </div>
+      <button id="next-button"><img src="./images/arrowright.png" alt="arrow right"></button>
     </section>
   </div>
 
 
   <footer> © All Rights reserved to Eduardo Oliveira </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+</div>  
 </body>
 
 </html>

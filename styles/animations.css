@@ -258,7 +258,7 @@
 }
 
 .card:hover img{
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 #title:hover {
@@ -294,8 +294,6 @@
     border-radius: 50%;
     box-shadow: 0 0 70px #00879E;
 }
-
-
 
 
 
@@ -354,19 +352,14 @@
     animation-fill-mode: forwards;
 }
 
-#yellow:hover {
-    animation-name: shake;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+.card {
+    transition: 0.35s;
+    cursor: pointer;
+}
+.card-group:hover > :not(:hover) {
+    opacity: .4;
+    transform: scale(.9);
 }
 
-#green:hover {
-    animation-name: shake;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-}
+
 }
