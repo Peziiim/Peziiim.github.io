@@ -227,10 +227,18 @@ header {
     display: flex;
     justify-content: start;
     position: fixed;
-    top: 60%;
+    top: 86%;
     left: 2vw;
     z-index: 3;
 }
+
+.logo-img {
+    height: 5rem;
+    position: fixed;
+    top: 86%;
+    left: 2vw;
+}
+
     .hero-container h1 {
         font-size: 2.5rem;
         padding-bottom: 20px;
