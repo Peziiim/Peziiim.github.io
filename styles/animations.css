@@ -59,7 +59,6 @@
     }
 }
 
-@keyframes move {}
 
 
 
@@ -257,6 +256,19 @@
     
 }
 
+@keyframes highlight {
+    0% {
+        opacity: 1;
+        transform: scale(1); 
+          
+     }
+
+     100% {
+        opacity: .8;
+        transform: scale(.9);
+         }
+}
+
 .card:hover img{
     transform: scale(1.07);
 }
@@ -359,6 +371,24 @@
 .card-group:hover > :not(:hover) {
     opacity: .4;
     transform: scale(.9);
+}
+
+.long-card {
+ 
+    cursor: pointer;
+}
+
+.long-card:hover {
+    box-shadow: 0px 0px 20px #FFAB5B;
+    cursor: pointer;
+}
+
+.container-about:hover > :not(:hover) {
+    animation-name: highlight;
+    animation-duration: 0.70s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 
