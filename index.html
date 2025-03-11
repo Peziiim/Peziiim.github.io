@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./scripts/script.js" defer></script>
   <title>Portfólio</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/animations.css">
@@ -15,111 +16,117 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Jacquard+12&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <script src="./scripts/script.js" defer></script>
 
 </head>
 
 <body>
 
   <div class="wrapper">
-  <img src="./images/wallpaper.png" alt="wallpaper genshin">
-  <div id="main">
-    <header class="header">
-      <div class="info d-flex flex-wrap align-itemns-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center pt-4">
-          <li><a class="about nav-link px-2 text-secondary" href="#about">
-              <h4>about me</h4>
-            </a></li>
-          <li> <a class="nav-link px-2 text-secondary" href="#projects">
-              <h4>projects</h4>
-            </a></li>
-        </ul>
-        <div class="text-end pt-4">
-          <a href="https://github.com/Peziiim">
-            <img class="social-img" src="./images/github.png" alt="github logo"></a>
-          <a id="linkedin" href="https://www.linkedin.com/in/eduardo-oliveira-risse-xavier-2b194634b/">
-            <img class="social-img" src="./images/linkedin.png" alt="linkedln logo"></button></a>
-          <a href="https://www.instagram.com/eduardo.o.xavier/">
-            <img class="social-img" src="./images/instagram.png" alt="instagram logo"></button></a>
+    <img src="./images/wallpaper.png" alt="wallpaper genshin">
+    <div id="main">
+      <header class="header">
+        <div class="info d-flex flex-wrap align-itemns-center justify-content-center justify-content-lg-start">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center pt-4">
+            <li><a class="about nav-link px-2 text-secondary" href="#about">
+                <h4>about me</h4>
+              </a></li>
+            <li> <a class="nav-link px-2 text-secondary" href="#projects">
+                <h4>projects</h4>
+              </a></li>
+          </ul>
+          <div class="text-end pt-4">
+            <a href="https://github.com/Peziiim">
+              <img class="social-img" src="./images/github.png" alt="github logo"></a>
+            <a id="linkedin" href="https://www.linkedin.com/in/eduardo-oliveira-risse-xavier-2b194634b/">
+              <img class="social-img" src="./images/linkedin.png" alt="linkedln logo"></button></a>
+            <a href="https://www.instagram.com/eduardo.o.xavier/">
+              <img class="social-img" src="./images/instagram.png" alt="instagram logo"></button></a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <div class="hero">
-      <section>
-        <article class="hero-container">
-          <h1 id="title">Web Developer</h1>
-          <h1><span class="fullstack"></span></h1>
-          <h2 id="me">Eduardo Oliveira</h2>
-          <h4 id="subtitle" class="col-6">FullStack Developer & 3D Designer</h4>
-        </article>
+      <div class="hero">
+        <section>
+          <article class="hero-container">
+            <h1 id="title">Web Developer</h1>
+            <h1><span class="fullstack"></span></h1>
+            <h2 id="me">Eduardo Oliveira</h2>
+            <h4 id="subtitle" class="col-6">FullStack Developer & 3D Designer</h4>
+          </article>
+      </div>
+      <div class="hero-images">
+        <img id="agency" src="./images/DesignAgency.png" alt="design agency picture" width="300" height="200">
+        <img id="dino" src="./images/3dModel.png" alt="3d model dinossaur" width="300">
+      </div>
+      </section>
     </div>
-    <div class="hero-images">
-      <img id="agency" src="./images/DesignAgency.png" alt="design agency picture" width="300" height="200">
-      <img id="dino" src="./images/3dModel.png" alt="3d model dinossaur" width="300">
+
+    <div id="projects" class=" container-fluid d-flex justify-content-center">
+      <section class="pr-container">
+        <div class="pr-bar">
+          <div class="pr-button">
+            <div id="red"><img src="./images/on.png" alt="on and off button"></div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/3dModel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/3dModel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/3dModel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+        </div>
+        <div class="button d-flex justify-content-lg-start">
+          <button>
+            <h5>Ver mais</h5>
+          </button>
+        </div>
+      </section>
     </div>
-    </section>
-  </div>
 
-  <div id="projects" class=" container-fluid d-flex justify-content-center">
-    <section class="pr-container">
-      <div class="pr-bar">
-        <div class="pr-button">
-          <div id="red"><img src="./images/on.png" alt="on and off button"></div>
-        </div>
-      </div>
-      <div class="card-group">
-        <div class="card">
-          <img src="./images/3dModel.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+    <div class="logo">
+      <img class="logo-img" src="./images/logo.png" alt=" paimon logo">
+    </div>
+
+    <div id="about" class="d-flex justify-content-center align-itemns-center">
+      <section class="me-container d-flex justify-content-center justify-content-lg-end ">
+        <div class="container-slider d-flex justify-content-center justify-content-lg-end">
+          <div class="d-flex p-2 justify-content-center align-itemns-center">
+            <button id="prev-button"> <img src="./images/arrowleft.png" alt="previuous button"></button>
+              <div class="photos">
+              <img id="my-photo" class="slider on" src="./images/eu.png" alt="photo of me">
+              <img id="my-dog" class="slider" src="./images/dog.png" alt="photo of my dog">
+            </div>
+            <button id="next-button"><img src="./images/arrowright.png" alt="next button"></button>
+          </div>
+          <div class="content">
+            <h1>about me</h1>
+            <p>Lorem ipsum afdwsaefgwsftgwerfd</p>
           </div>
         </div>
-        <div class="card">
-          <img src="./images/3dModel.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/3dModel.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="button d-flex justify-content-lg-start">
-        <button>
-          <h5>Ver mais</h5>
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
+
+
+    <footer> © All Rights reserved to Eduardo Oliveira </footer>
   </div>
-
-  <div class="logo">
-    <img class="logo-img" src="./images/logo.png" alt=" paimon logo">
-  </div>
-
-  <div id="about" class="d-flex justify-content-center align-itemns-center">
-    <section class="me-container d-flex justify-content-center justify-content-lg-end ">
-      <h4 class="">This is me</h4>
-      <button id="prev-button"><img src="./images/arrowleft.png" alt="arrow left"></button>
-      <div class="photos">
-        <img class="slider on" id="my-photo" src="./images/eu.png" alt="photo of me">
-        <img class="slider" src="./images/dog.png" alt="my dog photo">
-      </div>
-      <button id="next-button"><img src="./images/arrowright.png" alt="arrow right"></button>
-    </section>
-  </div>
-
-
-  <footer> © All Rights reserved to Eduardo Oliveira </footer>
-</div>  
 </body>
 
 </html>

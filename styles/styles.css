@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, p {
+    cursor: pointer;
+}
+
 body {
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -211,29 +215,47 @@ header {
 }
 
 .me-container {
-    background-color: grey;
-    width: 80%;
+    background-color: #1B262C;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    box-shadow: 0px 0px 40px black;
 }
 
-#my-photo {
-    rotate: 270deg;
-    height: 13em;
+.container-slider {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 10px 0 10px 0;
 }
+
 
 .photos {
     display: flex;
     align-items: center;
     position: relative;
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-    border: 5px solid white;
+    border: 3px solid white;
     overflow-x: hidden;
     overflow-y: hidden;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 20%;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+
+.on {
+    opacity: 1;
 }
 
  #prev-button, #next-button {
@@ -249,21 +271,45 @@ header {
     width: 100%;
 }
 
-.slider {
-    position: absolute;
-    opacity: 0;
-    transition: .2s;
-
+#next-button {
+    margin: 80px 5px 5px 20px;
 }
 
-
-.on {
-    opacity: 1;
+#prev-button {
+    margin: 80px 20px 5px 5px;
 }
 
-
+.content{
+    padding: 0 45% 0 5%;
+    margin-left: 10px;
+    color: white;
+}
 
 @media (max-width: 810px) {
+
+    .container-slider {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #next-button {
+        margin: 70px 5px 5px 20px;
+    }
+    
+    #prev-button {
+        margin: 70px 20px 5px 5px;
+    }
+
+    .photos {
+        height: 10rem;
+        width: 10rem;
+    }
+    .content {
+        padding: 0;
+    }
 
    .pr-button{
     display: none;

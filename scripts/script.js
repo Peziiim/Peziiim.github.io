@@ -1,37 +1,36 @@
-const slider = document.querySelector('.slider');
-const btnPrev = documentElementById('prev-button');
-const nextPrev = documentElementById('next-button');
+const sliders = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev-button');
+const btnNext = document.getElementById('next-button');
 
 let currentSlide = 0;
 
 function hideSlider() {
-    slider.forEach(item => item.classList.remove('on'));
+    sliders.forEach(item => item.classList.remove('on'));
 }
 
-
 function showSlider() {
-    slider[currentSlide].classList.add('on');
+    sliders[currentSlide].classList.add('on');
 }
 
 function nextSlider() {
-    hideSlider()
-    if(currentSlide == slider.length -1) {
+    hideSlider();
+    if (currentSlide === sliders.length - 1) {
         currentSlide = 0;
     } else {
-        currentSlide++
+        currentSlide++;
     }
     showSlider();
 }
 
 function prevSlider() {
     hideSlider();
-    if(currentSlide == 0) {
-        currentSlide = slider.length -1;
+    if (currentSlide === 0) {
+        currentSlide = sliders.length - 1;
     } else {
-        currentSlide--
+        currentSlide--;
     }
     showSlider();
 }
 
-btnPrev.addEventListener('click', () => console.log('clicado'));
-btnNext.addEventListener('click', () => console.log('clicado'));
+btnPrev.addEventListener('click', prevSlider);
+btnNext.addEventListener('click', nextSlider);
