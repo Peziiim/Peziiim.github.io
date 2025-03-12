@@ -1,26 +1,24 @@
-* {
-    padding: 0;
-    margin: 0;
-    --color: linear-gradient(blue, black);
-}
 
-h1, h2, h3, h4, h5, p {
-    cursor: pointer;
-}
 
 body {
     background-repeat: no-repeat;
     overflow-x: hidden;
-    height: 400vh;
+
 }
 
 .wrapper {
     overflow-x: hidden;
+    z-index: 1;
+}
+
+#wallpaper {
+    z-index: 1;
 }
 
 #main {
  position: absolute;
  top: 0;
+ z-index: 1;
  
 }
 
@@ -119,12 +117,73 @@ header {
     cursor: default;
 }
 
-#projects {
-    display: block;
+.section-title {
+    display: flex;
+    justify-content: center;
+    position: absolute;
     background-color: #1B262C;
- 
+    z-index: 0;
 }
 
+.section-title h1 {
+    position: relative;
+    bottom: 45px;
+    font-size: 9rem;
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    color: white;
+
+}
+
+#projects {
+    width: 100%;
+    background-color: #1B262C;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.projects-container {
+    flex-direction: column;
+    width: 80%;
+}
+
+#first-project, #third-project {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20vh;
+    width: 100%;
+    z-index: 1;
+}
+
+#second-project {
+    display: flex;
+    justify-content: end;
+    align-items: center ;
+    flex-direction: row-reverse;
+    padding-top: 15vh;
+    width: 100%;
+}
+
+#first-project img, #second-project img, #third-project img {
+    height: 20rem;
+    border: 3px solid white;
+    border-radius: 40px;
+    transition: transform 0.8s;
+}
+
+
+#first-project h1, #third-project h1 {
+    position: relative;
+    right: 90px;
+    color: white;
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    font-size: 5rem;
+    width: 100%;
+    z-index: 2;
+}
 .pr-container {
     margin-top: 15vh;
     width: 80vw;
@@ -134,10 +193,13 @@ header {
 .pr-button {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: 10px;
 }
 
+.pr-bar {
+    width: 80%;
+    padding-bottom: 30px;
+
+}
 
 #red {
     display: flex;
@@ -153,22 +215,16 @@ header {
 #red img {
     height: 20px;
 }
+
 .card-group {
-    gap: 20px;
+    gap: 25px;
 }
 
 .card {
     overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 5px 5px 10px #BBE1FA;
-    width: 100%;
+    box-shadow: 2px 2px 30px #000000;
+    
 }
-
-.card img {
-    background-color: #f1b67f;
-    transition: transform 0.8s;
-}
-
 
 .card-title {
     font-family: 'Poppins', sans-serif;
@@ -180,6 +236,8 @@ header {
 }
 
 .card-body h5 {
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
     color: #BBE1FA;
 }
 .card-body p{
@@ -187,6 +245,9 @@ header {
     font-weight: 900;
 }
 
+.button {
+    width: 80%;
+}
 .button button {
     display: flex;
     justify-content: center;
@@ -197,24 +258,23 @@ header {
     border-color: #0F4C75 #1B262C;
     background-color:#0F4C75;
     font-family:"Gelasio", serif;
-    font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-weight: 900;
 }
 
-.button h5 {
+.button h5, .button a {
     font-family: 'Gelasio', sans-serif;
     font-weight: 900;
-    margin-top: 10px;
+    margin-top: 4.5px;
     color: #BBE1FA;
+    text-decoration: none;
 }
 
 #about {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
     background-color: #1B262C;
     width: 100%;
+    padding-bottom: 200px;
 }
 
 
@@ -251,9 +311,18 @@ header {
     width: 12rem;
 }
 
+.long-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #1B262C;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 40px black;
+}
 
 
-.slider {
+.slider, .slider1, .slider2 {
     opacity: 0;
     transition: opacity .2s;
     position: absolute;
@@ -301,15 +370,7 @@ header {
 }
 
 .skills {
-    display: flex;
-    justify-content: start;
-    align-items: center;
     flex-direction: row-reverse;
-    background-color: #1B262C;
-    width: 100%;
-    margin-top: 20px;
-    box-shadow: 0px 0px 40px black;
-    padding: 20px 0 20px 0;
 }
 
 .skills h1 {
@@ -322,17 +383,6 @@ header {
     padding: 0 5% 8% 25vw;
 }
 
-.slider2 {
-    opacity: 0;
-    transition: opacity .2s;
-    position: absolute;
-    width: 100%; 
-    height: 100%;
-}
-
-.on {
-    opacity: 1;
-}
 
 .skills #next-button {
     margin: 90px 5px 5px 20px;
@@ -343,47 +393,82 @@ header {
    display: none;
 }
 
-.slider2 {
-    opacity: 0;
-    transition: opacity .2s;
-    position: absolute;
-    width: 100%; 
-    height: 100%;
-}
-
-.on {
-    opacity: 1;
-}
-
-
-.hobbies {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #1B262C;
-    width: 100%;
-    margin-top: 20px;
-    box-shadow: 0px 0px 40px black;
-}
-
 .hobbies h1 {
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
 }
 
-.slider3 {
-    opacity: 0;
-    transition: opacity .2s;
-    position: absolute;
-    width: 100%; 
-    height: 100%;
+#contact {
+    background-color: rgb(21, 21, 21);
 }
 
-.on {
-    opacity: 1;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    color: white;
+    height: 350px;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color:rgb(21, 21, 21);
+}
+
+footer {
+    width: 25%;
 }
 @media (max-width: 810px) {
+
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1B262C;
+     
+    }
+    
+    .section-title {
+       text-align: center;
+       position: static;
+    }
+
+    .section-title h1 {
+        bottom: 0;
+        margin: 50px 0 0 0;
+        font-size: 4rem;
+        font-family: 'Gelasio', serif;
+        font-weight: 900;
+        color: white;
+    
+    }
+
+    #first-project, #second-project, #third-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5vh;
+    }
+
+    #first-project img, #second-project img, #third-project img {
+        height: 13rem;
+    }
+
+    #first-project h1, #third-project h1, #second-project h1 {
+        font-size: 3rem;
+        right: 0;
+    }
+
 
     .container-slider {
         justify-content: center;
@@ -405,11 +490,18 @@ header {
         flex-direction: column-reverse;
         text-align: center;
         gap: 10px;
+        padding-top: 10px;
     }
     .text {
         padding: 0;
+
     }
     
+    .skills #prev-button, .skills #next-button {
+        margin: 70px 20px 5px 20px;
+        display: block;
+    }
+
 
     #next-button {
         margin: 70px 5px 5px 20px;
@@ -428,6 +520,11 @@ header {
         padding: 0;
         margin: 0;
         text-align: center;
+    }
+
+    .hobbies{
+        flex-direction: column-reverse;
+        padding-top: 10px;
     }
 
    .pr-button{
@@ -459,16 +556,9 @@ header {
         justify-content: center;
     }
 
+    footer {
+        width: 100%;
+    }
+
 }
 
-
-footer {
-    position: relative;
-    top: 100%;
-    left: 80.5%;
-    width: 20%;
-    text-align: center;
-    color: white;
-    background-color: black;
-    opacity: 1;
-}
