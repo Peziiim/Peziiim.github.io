@@ -184,6 +184,11 @@ header {
     width: 100%;
     z-index: 2;
 }
+
+
+#third-project {
+    margin-bottom: 100px;
+}
 .pr-container {
     margin-top: 15vh;
     width: 80vw;
@@ -285,7 +290,38 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 200px;
   
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 0;
+}
+
+.about-me h1, .about-me img {
+    font-size: 4.5rem;
+    height: 6rem;
+    position: relative;
+    top: 12vh;
+}
+
+.about-me img {
+    top: 20vh;
+    right: 50px;
+    float: left;
+}
+
+.about-me-container h3, .about-me-container h4 {
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    top: 20vh;
 }
 
 .container-slider {
@@ -298,6 +334,7 @@ header {
     height: 12rem;
     padding: 10px 0 10px 0;
     box-shadow: 0px 0px 40px black;
+    z-index: 1;
 }
 
 
@@ -319,6 +356,7 @@ header {
     width: 100%;
     margin-top: 20px;
     box-shadow: 0px 0px 40px black;
+    z-index: 1;
 }
 
 
@@ -414,6 +452,17 @@ header {
     height: 350px;
 }
 
+.contact-container img {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    background-color: #1B262C;
+}
+
 .footer {
     display: flex;
     justify-content: end;
@@ -433,12 +482,31 @@ footer {
         justify-content: center;
         align-items: center;
         background-color: #1B262C;
-     
     }
     
     .section-title {
        text-align: center;
        position: static;
+    }
+
+    .about-me h1 {
+      position: relative;
+      top: 70px;
+      
+    }
+    .about-me img {
+        top: 500px;
+        right: 120px;
+        color: white;
+    }
+
+
+    .about-me-container h3, .about-me-container h4 {
+        display: none;
+    }
+    
+    .container-about {
+        padding: 0;
     }
 
     .section-title h1 {
@@ -467,6 +535,7 @@ footer {
     #first-project h1, #third-project h1, #second-project h1 {
         font-size: 3rem;
         right: 0;
+        top: 25px;
     }
 
 
@@ -476,6 +545,7 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 10px;
+        margin: 0;
         height: auto;
     }
 

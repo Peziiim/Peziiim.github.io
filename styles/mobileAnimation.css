@@ -136,4 +136,12 @@
             transform: scale(.9);
          }
     }
+
+    .contact-container a:active {
+        animation-name: shake;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
 }

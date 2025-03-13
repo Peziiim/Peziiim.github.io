@@ -264,7 +264,7 @@
      }
 
      100% {
-        opacity: .8;
+        opacity: .6;
         transform: scale(.98);
          }
 }
@@ -391,5 +391,11 @@
     animation-fill-mode: forwards;
 }
 
-
+.contact-container a:hover {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
 }
