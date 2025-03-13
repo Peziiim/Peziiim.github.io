@@ -264,8 +264,21 @@
      }
 
      100% {
-        opacity: .6;
+        opacity: .3;
         transform: scale(.98);
+         }
+}
+
+@keyframes scale {
+    0% {
+        opacity: .8;
+        transform: translateY(0); 
+          
+     }
+
+     100% {
+        opacity: 1;
+        transform: translateY(-80%);
          }
 }
 
@@ -273,13 +286,7 @@
     transform: scale(1.07);
 }
 
-#title:hover {
-    animation-name: smash;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-}
+
 
 #subtitle:hover {
     text-decoration: line-through;
@@ -398,4 +405,7 @@
     animation-direction: normal;
     animation-fill-mode: forwards;
 }
+
+
+
 }

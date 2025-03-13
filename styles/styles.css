@@ -1,5 +1,3 @@
-
-
 body {
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -8,7 +6,7 @@ body {
 
 .wrapper {
     overflow-x: hidden;
-    z-index: 1;
+
 }
 
 #wallpaper {
@@ -16,10 +14,11 @@ body {
 }
 
 #main {
- position: absolute;
- top: 0;
- z-index: 1;
- 
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
 }
 
 .header img {
@@ -46,7 +45,7 @@ header {
     font-family: "Gelasio", serif;
     font-weight: 700;
     color: white;
-    
+
 }
 
 .about {
@@ -72,7 +71,7 @@ header {
 }
 
 .hero-container h1 {
-    font-family:"Gelasio", serif;
+    font-family: "Gelasio", serif;
     font-weight: 800;
     color: white;
     cursor: default;
@@ -104,14 +103,14 @@ header {
 }
 
 #me {
-    font-family:"Gelasio", serif;
+    font-family: "Gelasio", serif;
     font-weight: 800;
     color: white;
     cursor: default;
 }
 
 #subtitle {
-    font-family:"Gelasio", serif;
+    font-family: "Gelasio", serif;
     font-weight: 900;
     color: white;
     cursor: default;
@@ -120,53 +119,88 @@ header {
 .section-title {
     display: flex;
     justify-content: center;
-    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    left: 9rem;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin: 0;
+    width: 30vw;
     background-color: #1B262C;
     z-index: 0;
 }
 
 .section-title h1 {
-    position: relative;
-    bottom: 45px;
-    font-size: 9rem;
+    font-size: 6rem;
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
+    z-index: 1;
+    padding: 0;
+}
 
+.section-title h4 {
+    color: white;
+    font-family: 'Gelasio';
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    width: 150%;
+    text-align: center;
 }
 
 #projects {
-    width: 100%;
-    background-color: #1B262C;
     display: flex;
     justify-content: center;
+    width: 100%;
+    background-color: #1B262C;
     z-index: 1;
 }
 
+
 .projects-container {
-    flex-direction: column;
-    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 95%;
+    margin-top: 100px;
+    padding-bottom: 100px ;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
-#first-project, #third-project {
+#first-project,
+#third-project {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-top: 20vh;
+    padding-top: 15vh;
+    padding-left: 2vw;
     width: 100%;
     z-index: 1;
 }
 
+#third-project {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
 #second-project {
-    display: flex;
-    justify-content: end;
-    align-items: center ;
+    position: relative;
+    left: 45px;
+    top: 40px;
+    grid-column-start: 2;
+    grid-row-start: 2;
     flex-direction: row-reverse;
     padding-top: 15vh;
     width: 100%;
 }
 
-#first-project img, #second-project img, #third-project img {
+#first-project img,
+#second-project img,
+#third-project img {
     height: 20rem;
     border: 3px solid white;
     border-radius: 40px;
@@ -174,7 +208,8 @@ header {
 }
 
 
-#first-project h1, #third-project h1 {
+#first-project h1,
+#third-project h1 {
     position: relative;
     right: 90px;
     color: white;
@@ -185,103 +220,24 @@ header {
     z-index: 2;
 }
 
-
 #third-project {
-    margin-bottom: 100px;
-}
-.pr-container {
-    margin-top: 15vh;
-    width: 80vw;
-    padding-bottom: 120px;
+    margin-bottom: 50px;
 }
 
-.pr-button {
-    display: flex;
-    align-items: center;
-}
-
-.pr-bar {
-    width: 80%;
-    padding-bottom: 30px;
-
-}
-
-#red {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: red;
-    cursor: pointer;
-}
-
-#red img {
-    height: 20px;
-}
-
-.card-group {
-    gap: 25px;
-}
-
-.card {
-    overflow: hidden;
-    box-shadow: 2px 2px 30px #000000;
-    
-}
-
-.card-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 950;
-    
-}
-.card-body{
-    background-color: #1B262C;
-}
-
-.card-body h5 {
-    font-family: 'Gelasio', serif;
-    font-weight: 900;
-    color: #BBE1FA;
-}
-.card-body p{
-    color: #3282B8;
-    font-weight: 900;
-}
-
-.button {
-    width: 80%;
-}
-.button button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8rem;
-    height: 3rem;
-    border-radius: 10px;
-    border-color: #0F4C75 #1B262C;
-    background-color:#0F4C75;
-    font-family:"Gelasio", serif;
-    font-weight: 900;
-}
-
-.button h5, .button a {
-    font-family: 'Gelasio', sans-serif;
-    font-weight: 900;
-    margin-top: 4.5px;
-    color: #BBE1FA;
-    text-decoration: none;
-}
 
 #about {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #1B262C;
     width: 100%;
     padding-bottom: 200px;
 }
 
+#about div {
+    color: white;
+}
 
 .container-about {
     background-color: #1B262C;
@@ -290,8 +246,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 200px;
-  
+
 }
 
 .about-me {
@@ -299,29 +254,36 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: static;
     width: 100%;
     z-index: 0;
 }
 
-.about-me h1, .about-me img {
+.about-me h1,
+.about-me img {
     font-size: 4.5rem;
-    height: 6rem;
+    font-family: 'Gelasio, serif';
+    font-weight: 900;
+    height: 7rem;
     position: relative;
-    top: 12vh;
+}
+
+.about-me h1 {
+    top: 18vh;
 }
 
 .about-me img {
-    top: 20vh;
-    right: 50px;
     float: left;
 }
 
-.about-me-container h3, .about-me-container h4 {
+.about-me div{
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
     position: relative;
+    gap: 50px;
     top: 20vh;
+    right: 50px;
 }
 
 .container-slider {
@@ -329,10 +291,7 @@ header {
     flex-direction: row-reverse;
     justify-content: end;
     align-items: center;
-    width: 100%;
-    gap: 1rem;
     height: 12rem;
-    padding: 10px 0 10px 0;
     box-shadow: 0px 0px 40px black;
     z-index: 1;
 }
@@ -350,7 +309,6 @@ header {
 
 .long-card {
     display: flex;
-    justify-content: start;
     align-items: center;
     background-color: #1B262C;
     width: 100%;
@@ -360,11 +318,13 @@ header {
 }
 
 
-.slider, .slider1, .slider2 {
+.slider,
+.slider1,
+.slider2 {
     opacity: 0;
     transition: opacity .2s;
     position: absolute;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
@@ -372,15 +332,17 @@ header {
     opacity: 1;
 }
 
- #prev-button, #next-button {
+#prev-button,
+#next-button {
     height: 20px;
     width: 20px;
     border: none;
-    background-color: transparent;  
+    background-color: transparent;
     cursor: pointer;
 }
 
-#next-button img, #prev-button img {
+#next-button img,
+#prev-button img {
     height: 100%;
     width: 100%;
 }
@@ -393,33 +355,38 @@ header {
     margin: 85px 20px 5px 5px;
 }
 
-.content{
-    width: 80%;
-    padding: 0 15vw 0 5%;
-    margin-left: 10px;
-    color: white;
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     
+    color: white;
 }
 
 .content h1 {
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
+    font-size: 2.2rem;
 }
 
 .skills {
     flex-direction: row-reverse;
 }
 
-.skills h1 {
-    font-family: 'Gelasio', serif;
-    font-weight: 900;
-    color: white;
+.long-card-title {
+    float: left;
+    rotate: 270deg;
+    border-bottom: 2px solid grey;
+    background-color: #3b4144;
 }
 
-.text {
-    padding: 0 5% 8% 25vw;
+
+.long-card-text {
+    word-break: break-all;
+    width: 80%;
 }
+
 
 
 .skills #next-button {
@@ -428,7 +395,7 @@ header {
 }
 
 .skills #prev-button {
-   display: none;
+    display: none;
 }
 
 .hobbies h1 {
@@ -436,6 +403,7 @@ header {
     font-weight: 900;
     color: white;
 }
+
 
 #contact {
     background-color: rgb(21, 21, 21);
@@ -457,11 +425,82 @@ header {
     border-radius: 20px;
 }
 
-.email {
-    display: flex;
-    justify-content: center;
-    background-color: #1B262C;
-}
+
+  main h1 {
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: -0.4px;
+    color: #07070A;
+    margin-bottom: 1rem;
+  }
+  
+  .click-to-copy-container {
+    position: relative;
+    top: 20px;
+  }
+  
+  button.click-to-copy, a.click-to-copy-fallback {
+    background: #21FA90;
+    border: none;
+    box-shadow: none;
+    width: 11rem;
+    word-wrap: break-word;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: #07070A;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+  }
+  
+  button.click-to-copy:hover, a.click-to-copy-fallback:hover {
+    opacity: .8;
+  }
+  
+  button.click-to-copy + span {
+
+    display: none;
+
+    margin-left: 1rem;
+    background: #FFAB5B;
+    padding: .5rem;
+    border-radius: .2rem;
+    position: absolute;
+    top: .75rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    font-weight: 600;
+    color: #003092;
+  }
+  
+
+  button.click-to-copy + span:after {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(218, 218, 218, 0);
+      border-right-color: #FFAB5B;
+      border-width: 6px;
+      margin-top: -6px;
+  }
+  
+
+  button.click-to-copy.is-copied + span {
+    display: initial;
+  }
+
+  a.click-to-copy-fallback {
+    display: none;
+  }
+  
 
 .footer {
     display: flex;
@@ -469,75 +508,105 @@ header {
     width: 100%;
     text-align: center;
     color: white;
-    background-color:rgb(21, 21, 21);
+    background-color: rgb(21, 21, 21);
 }
 
 footer {
     width: 25%;
 }
-@media (max-width: 810px) {
 
-    .projects-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #1B262C;
+@media (max-width: 810px) {
+    
+    button.click-to-copy {
+      display: none;
     }
     
+    .click-to-copy-container{
+        margin-top: 20px;
+    }
+    
+    a.click-to-copy-fallback {
+      display: block;
+    }
+    .long-card-title {
+        float: none;
+        rotate: 360deg;
+        border: 0;
+    }
+    
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #1B262C;
+    }
+
     .section-title {
-       text-align: center;
-       position: static;
+       place-items: center;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+
+    .about-me img,
+    .about-me h4,
+    .about-me h5 {
+        display: none;
     }
 
     .about-me h1 {
-      position: relative;
-      top: 70px;
-      
-    }
-    .about-me img {
-        top: 500px;
-        right: 120px;
-        color: white;
+        top: 0;
     }
 
-
-    .about-me-container h3, .about-me-container h4 {
-        display: none;
-    }
-    
     .container-about {
         padding: 0;
     }
 
     .section-title h1 {
-        bottom: 0;
-        margin: 50px 0 0 0;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-family: 'Gelasio', serif;
         font-weight: 900;
         color: white;
-    
+
     }
 
-    #first-project, #second-project, #third-project {
+    .long-card-text {
+        padding: 0;
+    }
+
+    #line {
+        left: 25%;
+        right: 25%;
+        top: 18vh;
+        width: 50%;
+    }
+
+    #first-project,
+    #second-project,
+    #third-project {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         text-align: center;
-        padding-top: 5vh;
+        width: 100%;
     }
 
-    #first-project img, #second-project img, #third-project img {
+    #first-project img,
+    #second-project img,
+    #third-project img {
         height: 13rem;
     }
 
-    #first-project h1, #third-project h1, #second-project h1 {
+    #first-project h1,
+    #third-project h1,
+    #second-project h1 {
         font-size: 3rem;
         right: 0;
-        top: 25px;
+        top: 15px;
     }
-
 
     .container-slider {
         justify-content: center;
@@ -562,12 +631,14 @@ footer {
         gap: 10px;
         padding-top: 10px;
     }
+
     .text {
         padding: 0;
 
     }
-    
-    .skills #prev-button, .skills #next-button {
+
+    .skills #prev-button,
+    .skills #next-button {
         margin: 70px 20px 5px 20px;
         display: block;
     }
@@ -577,7 +648,7 @@ footer {
         margin: 70px 5px 5px 20px;
         display: block;
     }
-    
+
     #prev-button {
         margin: 70px 20px 5px 5px;
     }
@@ -586,39 +657,54 @@ footer {
         height: 10rem;
         width: 10rem;
     }
+
     .content {
         padding: 0;
         margin: 0;
         text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hobbies{
+    .hobbies {
         flex-direction: column-reverse;
         padding-top: 10px;
     }
 
-   .pr-button{
-    display: none;
-   }
+    .pr-button {
+        display: none;
+    }
 
-   .logo {
-    display: none;
-}
+    .logo {
+        display: none;
+    }
 
-.logo-img {
- display: none;
-}
+    .logo-img {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20vh;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
     .hero-container h1 {
         font-size: 2.5rem;
-        padding-bottom: 20px;
-    }
-    #dino {
-        display: none;
+        padding-bottom: 30px;
     }
 
-    #agency {
-        display: none;
+    .header {
+        width: 100%;
+        margin-left: 0;
     }
     .info {
         width: 100%;
@@ -631,4 +717,3 @@ footer {
     }
 
 }
-

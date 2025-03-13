@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./scripts/script.js" defer></script>
   <title>Portfólio</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/animations.css">
@@ -16,6 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Jacquard+12&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script src="./scripts/script.js" defer></script>
 
 </head>
 
@@ -54,17 +54,18 @@
         </article>
       </div>
       <div class="hero-images">
-        <img id="agency" src="./images/DesignAgency.png" alt="design agency picture" width="300" height="200">
-        <img id="dino" src="./images/3dModel.png" alt="3d model dinossaur" width="300">
+
+
       </div>
     </div>
 
-    <div class="section-title">
-      <h1>PROJECTS </h1>
-      <div id="line"></div>
-    </div>
-    <section id="projects">
-      <div class="projects-container d-flex justify-content-center">
+    <div class="wrap"> 
+    <div id="projects">
+      <div class="projects-container">
+        <div class="section-title">
+          <h1>PROJECTS </h1>
+          <h4>By me</h4>
+        </div>
         <div id="first-project">
           <img src="./images/3dModel.png" alt="">
           <h1>LOREM iPSUM</h1>
@@ -78,7 +79,9 @@
           <h1>LOREM iPSUM</h1>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
 
     <div class="logo">
       <img class="logo-img" src="./images/logo.png" alt=" paimon logo">
@@ -86,15 +89,15 @@
 
 
 
-    <div class="section-title about-me">
-      <h1>About me</h1>
-      <div class="about-me-container">
-        <img src="./images/diabodatasmania.png" alt="diabo da tasmania photo">
-        <h3>Don't look too much</h3>
-        <h4>He is shy</h4>
-      </div>
-    </div>
     <section id="about">
+      <div class="about-me">
+        <h1>About me</h1>
+        <div>
+          <img src="./images/diabodatasmania.png" alt="diabo da tasmania photo">
+          <h4>Don't look too much</h4>
+          <h5>(He is shy)</h5>
+        </div>
+      </div>
       <div class="container-about d-flex justify-content-center">
         <div class="container-slider long-card d-flex justify-content-center justify-content-lg-end">
           <div class="d-flex justify-content-end align-itemns-center">
@@ -106,14 +109,21 @@
             <button id="next-button"><img src="./images/arrowright.png" alt="next button"></button>
           </div>
           <div class="content">
-            <h1>About me</h1>
-            <p>Lorem ipsum afdwsaefgwsftgwerfd</p>
+            <div class="long-card-title">
+              <h1>About me</h1>
+            </div>
+            <div class="long-card-text">
+              <p>Lorem ipsum afdwsaefgwsftgwerfdaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
           </div>
         </div>
 
         <div class="skills long-card">
           <div class="content">
-            <h1>dfgbdfgb</h1>
+            <div class="long-card-title">
+              <h1>Skills</h1>
+            </div>
           </div>
           <div class="d-flex">
             <button id="prev-button"> <img src="./images/arrowleft.png" alt="previuous button"></button>
@@ -163,31 +173,37 @@
           </div>
         </div>
       </div>
+
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h1>Want to work together?</h1>
+        <h2>Contact me</h2>
+        <a href="https://api.whatsapp.com/send/?phone=5511950861903&text&type=phone_number&app_absent=0"><img
+            src="./images/whatsApp-logo.png" alt="whatsapp logo" width="150"></a>
+            <main>
+              <div class="click-to-copy-container">
+                <button 
+                  class="click-to-copy"
+                  title="Click to Copy Email Address"
+                >
+                eduardo.risse.oliveira@gmail.com
+                </button>
+                <span>Copied!</span>
+              </div>
+              <a href="mailto:hello@juangarcia.com.ar" class="click-to-copy-fallback">
+                hello@juangarcia.com.ar
+              </a>
+            </main>
+      </div>
+      <div class="footer">
+        <footer> © All Rights reserved to Eduardo Oliveira </footer>
+      </div>
+
+    </section>
   </div>
-  </div>
 
-  <div class="email">
-    <img src="./images/trem2.png" alt="" width="300">
-  </div>
-  </section>
-
-
-  <section id="contact">
-    <div class="contact-container">
-      <h1>Want to work together?</h1>
-      <h2>Contact me</h2>
-      <a href="https://api.whatsapp.com/send/?phone=5511950861903&text&type=phone_number&app_absent=0"><img
-          src="./images/whatsApp-logo.png" alt="whatsapp logo" width="150"></a>
-    </div>
-    <div class="footer">
-      <footer> © All Rights reserved to Eduardo Oliveira </footer>
-    </div>
-
-  </section>
-  </div>
-
-
-  </div>
 </body>
 
 </html>
