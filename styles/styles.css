@@ -189,19 +189,19 @@ header {
 
 #second-project {
     position: relative;
-    left: 45px;
+    left: 15vw;
     top: 40px;
     grid-column-start: 2;
     grid-row-start: 2;
     flex-direction: row-reverse;
     padding-top: 15vh;
-    width: 100%;
+
 }
 
 #first-project img,
 #second-project img,
 #third-project img {
-    height: 20rem;
+    height: 17rem;
     border: 3px solid white;
     border-radius: 40px;
     transition: transform 0.8s;
@@ -215,7 +215,7 @@ header {
     color: white;
     font-family: 'Gelasio', serif;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 4rem;
     width: 100%;
     z-index: 2;
 }
@@ -313,6 +313,7 @@ header {
     background-color: #1B262C;
     width: 100%;
     margin-top: 20px;
+    padding-top: 10px;
     box-shadow: 0px 0px 40px black;
     z-index: 1;
 }
@@ -334,8 +335,8 @@ header {
 
 #prev-button,
 #next-button {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 30px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -352,14 +353,13 @@ header {
 }
 
 #prev-button {
-    margin: 85px 20px 5px 5px;
+    margin: 75px 20px 5px 5px;
 }
 
 .content {
     display: flex;
     justify-content: center;
     width: 100%;
-    
     color: white;
 }
 
@@ -426,82 +426,6 @@ header {
 }
 
 
-  main h1 {
-    font-weight: 600;
-    font-size: 34px;
-    letter-spacing: -0.4px;
-    color: #07070A;
-    margin-bottom: 1rem;
-  }
-  
-  .click-to-copy-container {
-    position: relative;
-    top: 20px;
-  }
-  
-  button.click-to-copy, a.click-to-copy-fallback {
-    background: #21FA90;
-    border: none;
-    box-shadow: none;
-    width: 11rem;
-    word-wrap: break-word;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: -0.2px;
-    color: #07070A;
-    transition: all .2s ease-in-out;
-    text-decoration: none;
-  }
-  
-  button.click-to-copy:hover, a.click-to-copy-fallback:hover {
-    opacity: .8;
-  }
-  
-  button.click-to-copy + span {
-
-    display: none;
-
-    margin-left: 1rem;
-    background: #FFAB5B;
-    padding: .5rem;
-    border-radius: .2rem;
-    position: absolute;
-    top: .75rem;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: .4px;
-    font-weight: 600;
-    color: #003092;
-  }
-  
-
-  button.click-to-copy + span:after {
-      right: 100%;
-      top: 50%;
-      border: solid transparent;
-      content: "";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(218, 218, 218, 0);
-      border-right-color: #FFAB5B;
-      border-width: 6px;
-      margin-top: -6px;
-  }
-  
-
-  button.click-to-copy.is-copied + span {
-    display: initial;
-  }
-
-  a.click-to-copy-fallback {
-    display: none;
-  }
-  
-
 .footer {
     display: flex;
     justify-content: end;
@@ -517,17 +441,6 @@ footer {
 
 @media (max-width: 810px) {
     
-    button.click-to-copy {
-      display: none;
-    }
-    
-    .click-to-copy-container{
-        margin-top: 20px;
-    }
-    
-    a.click-to-copy-fallback {
-      display: block;
-    }
     .long-card-title {
         float: none;
         rotate: 360deg;
@@ -540,15 +453,14 @@ footer {
         align-items: center;
         width: 100%;
         background-color: #1B262C;
+        border: 0;
     }
 
     .section-title {
-       place-items: center;
         text-align: center;
-        grid-column-start: 1;
-        grid-row-start: 1;
         width: 100%;
-        margin-bottom: 100px;
+        position: static;
+        width: 60%;
     }
 
 
@@ -585,19 +497,23 @@ footer {
         width: 50%;
     }
 
+
+
     #first-project,
     #second-project,
     #third-project {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 100%;
+        margin-bottom: 0;
+
     }
 
     #first-project img,
     #second-project img,
     #third-project img {
         height: 13rem;
+ 
     }
 
     #first-project h1,
@@ -607,6 +523,15 @@ footer {
         right: 0;
         top: 15px;
     }
+
+    #second-project {
+        left: 0;
+        top: 0; 
+       }
+
+       #third-project {
+        margin-bottom: 200px;
+       }
 
     .container-slider {
         justify-content: center;

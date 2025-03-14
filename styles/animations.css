@@ -406,6 +406,8 @@
     animation-fill-mode: forwards;
 }
 
-
+.copy-mask:hover {
+    display: none;
+}
 
 }
