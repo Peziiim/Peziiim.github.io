@@ -423,6 +423,9 @@ header {
     list-style-type: none;
 }
 
+#prev-button {
+    margin: 110px 20px 0 0;
+}
 
 #prev-button2 {
     display: none;
@@ -436,6 +439,7 @@ header {
 #prev-button3 {
     z-index: 4;
     display: block;
+    margin: 135px 20px 0 0;
 }
 
 
@@ -620,7 +624,7 @@ footer {
     }
 
     .skill-button {
-        width: 4.5rem;
+        width: 6.5rem;
     }
 
 
