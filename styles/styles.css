@@ -663,8 +663,9 @@ footer {
 
     .hero {
         width: 100%;
+        align-items: center;
         margin-left: 0;
-        margin-top: 20vh;
+        margin-top: 12vh;
     }
 
     .hero-container {
