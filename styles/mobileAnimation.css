@@ -109,32 +109,34 @@
         transition: 0.15s;
         cursor: pointer;
     }
-    .card-group:hover > :not(:hover) {
+
+    .card-group:hover> :not(:hover) {
         opacity: .4;
         transform: scale(.9);
     }
-    
+
     .long-card:hover {
         box-shadow: 0px 0px 20px #FFAB5B;
     }
-    .container-about:hover > :not(:hover) {
+
+    .container-about:hover> :not(:hover) {
         animation-name: highlight;
         animation-duration: 0.35s;
         animation-iteration-count: 1;
         animation-direction: normal;
         animation-fill-mode: forwards;
     }
-    
+
     @keyframes highlight {
         0% {
             opacity: 1;
-            transform: scale(1);   
-         }
-    
-         100% {
+            transform: scale(1);
+        }
+
+        100% {
             opacity: .8;
             transform: scale(.9);
-         }
+        }
     }
 
     .contact-container a:active {
@@ -145,5 +147,5 @@
         animation-fill-mode: forwards;
     }
 
-    
+
 }

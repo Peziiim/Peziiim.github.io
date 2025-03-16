@@ -182,7 +182,7 @@ header {
 #third-project {
     grid-column-start: 1;
     grid-row-start: 3;
-    padding-top: 200px ;
+    padding-top: 200px;
 }
 
 #second-project {
@@ -319,9 +319,9 @@ header {
 }
 
 .p-skill {
- height: 19rem;
- width: 18rem;
- border-left: 5px solid rgb(26, 24, 24);
+    height: 19rem;
+    width: 18rem;
+    border-left: 5px solid rgb(26, 24, 24);
 }
 
 
@@ -384,7 +384,7 @@ header {
     color: white;
 }
 
-.content-title h1{
+.content-title h1 {
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
@@ -479,17 +479,17 @@ footer {
 }
 
 
-@media (max-width: 910px) {
+@media (max-width: 1020px) {
 
 
-#subtitle {
-    font-size: 1.5rem;
-}
+    #subtitle {
+        font-size: 1.5rem;
+    }
 
-.content p {
-    width: auto;
-    word-break:normal;
-}
+    .content p {
+        width: auto;
+        word-break: normal;
+    }
 
 
 
@@ -582,7 +582,8 @@ footer {
         text-align: center;
         margin: 3rem 0 0 0;
         height: auto;
-        padding: 20px; 
+        width: 90vw;
+        padding: 40px;
         background-image: url("../images/banner.jpg");
         background-size: cover;
     }
@@ -614,17 +615,9 @@ footer {
         width: 80%;
     }
 
-    .skills {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 10px;
-        padding-top: 10px;
-    }
 
     .skill-button {
-        width: 6.5rem;
+        width: 4.5rem;
     }
 
 
@@ -640,7 +633,7 @@ footer {
     #prev-button3 {
         margin: 70px 20px 0 0;
         display: block;
-    
+
     }
 
     .photos {
