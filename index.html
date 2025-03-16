@@ -23,6 +23,7 @@
   <div class="wrapper">
     <img id="wallpaper" src="./images/wallpaper.png" alt="wallpaper genshin">
     <div id="main">
+
       <header class="header">
         <div class="info d-flex flex-wrap align-itemns-center justify-content-center justify-content-lg-start">
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center pt-4">
@@ -47,7 +48,7 @@
       <div class="hero">
         <article class="hero-container">
           <h1 id="title">Web Developer</h1>
-          <h1><span class="fullstack"></span></h1>
+          <h1><span class="fullstack"></span><img id="cube" src="./images/cube.png" alt="cube"></h1>
           <h2 id="me">Eduardo Oliveira</h2>
           <h4 id="subtitle" class="col-lg-12 col-6">FullStack Developer & 3D Designer</h4>
         </article>
@@ -60,13 +61,15 @@
 
     <div id="projects">
       <div class="projects-container">
-        <div class="section-title">
-          <h1>PROJECTS </h1>
-          <h4>By me</h4>
-        </div>
         <div id="first-project">
-          <img src="./images/3dModel.png" alt="">
-          <h1>LOREM iPSUM</h1>
+          <div class="section-title">
+            <h1>PROJECTS </h1>
+            <h4 id="section-sub">By me</h4>
+          </div>
+          <div class="project">
+            <img src="./images/3dModel.png" alt="">
+            <h1>LOREM iPSUM</h1>
+          </div>
         </div>
         <div id="second-project">
           <img src="./images/3dModel.png" alt="">
@@ -112,7 +115,7 @@
             <div class="content-title">
               <h1>About me<span>²</span></h1>
             </div>
-            <p>My name is Eduardo Oliveira, i am an 18-year-old student currently enrolled at IFSP, in pursuit of a
+            <p>My name is Eduardo Oliveira, i am an 18 years old student currently enrolled at IFSP, in pursuit of a
               degree in Systems Analysis and Development. Alongside my formal education, i have independently developed
               my programming skills, accumulating 1 year and 9 months of experience as a self-taught programmer.</p>
           </div>
@@ -123,37 +126,39 @@
             <button id="prev-button2" class="func-btn-prev"> <img src="./images/arrowleft.png"
                 alt="previous button"></button>
             <div class="photos p-skill">
-              <img class="slider2 on" src="./images/html5.png" alt="logo of html">
-              <img class="slider2" src="./images/css.jpg" alt="css logo">
-              <img class="slider2" src="./images/JS.png" alt="Javascript logo">
+              <img class="slider2 on" src="./images/JS.png" alt="Javascript logo">
               <img class="slider2" src="./images/Java.jpg" alt="Java logo">
+              <img class="slider2" src="./images/c++.jpeg" alt="Javascript logo">
               <img class="slider2" src="./images/Spring.jpg" alt="SpringBoot logo">
+              <img class="slider2" src="./images/css.jpg" alt="css logo">
+              <img class="slider2" src="./images/html5.png" alt="logo of html">
+              <img class="slider2" src="./images/MySql.jpeg" alt="Javascript logo">
             </div>
             <button id="next-button2" class="func-btn-next"><img src="./images/arrowright.png"
                 alt="next button"></button>
           </div>
           <div class="content">
-            <div class="content-title">
+            <div class="middle-title">
               <h1>Skills</h1>
             </div>
-            <div class="skills-list">
-              <ul class="list-1">
-                <li><button class="skill-button"></button></li>
-                <li><button class="skill-button"></button></li>
-                <li><button class="skill-button"></button></li>
-              </ul>
-              <ul class="list-1">
-                <li><button class="skill-button"></button></li>
-                <li><button class="skill-button"></button></li>
-                <li><button class="skill-button"></button></li>
-              </ul>
-              <ul class="list-1">
-                <li><button class="skill-button"></button></li>
-                <li><button class="skill-button"></button></li>
-                <li><button class="skill-button"></button></li>
-              </ul>
+              <div class="skills-list">
+                <ul class="list-1">
+                  <li><button class="skill-button">Java</button></li>
+                  <li><button class="skill-button">Javascript</button></li>
+                  <li><button class="skill-button">C++</button></li>
+                </ul>
+                <ul class="list-1">
+                  <li><button class="skill-button">SpringBoot</button></li>
+                  <li><button class="skill-button">CSS</button></li>
+                  <li><button class="skill-button">HTML</button></li>
+                </ul>
+                <ul class="list-1 list-3">
+                  <li><button class="skill-button">MySQL</button></li>
+                  <li id="JPA"><button class="skill-button">JPA</button></li>
+                  <li><button class="skill-button">Maven</button></li>
+                </ul>
+              </div>
             </div>
-          </div>
         </div>
 
 
@@ -180,7 +185,7 @@
               professional journey. However, during my free time, I love to immerse myself in different forms of
               entertainment. I like reading books, whether they are fiction, technical, or thought-provoking
               non-fiction. I also find great pleasure in watching animes and
-              series, exploring different genres and engaging stories. Additionally, I can't let it pass my passion for
+              series, exploring different genres and engaging stories. Additionally, I can't let it pass my affection for
               gaming, as it allows me to experience new worlds, challenges, and narratives in an interactive way.
             </p>
           </div>
@@ -192,7 +197,7 @@
 
     <section id="contact">
       <div class="contact-container">
-        <h1>Want to work together?</h1>
+        <h1 id="invite">Want to work together?</h1>
         <h2>Contact me</h2>
         <a href="https://api.whatsapp.com/send/?phone=5511950861903&text&type=phone_number&app_absent=0"><img
             src="./images/whatsApp-logo.png" alt="whatsapp logo" width="150"></a>

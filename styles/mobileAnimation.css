@@ -81,11 +81,14 @@
     }
 
 
-    @keyframes cursor {
+    @keyframes rotate {
         0% {
-            opacity: 0;
+            transform: rotate(0);
         }
 
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
     .fullstack::before {
@@ -99,7 +102,6 @@
         position: relative;
         height: 10px;
         margin-left: 15px;
-        border-right: 2px solid white;
         animation: cursor .8s infinite;
         width: calc(100% + 15px);
 
@@ -147,5 +149,61 @@
         animation-fill-mode: forwards;
     }
 
+    #cube {
+        animation-name: rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    #main {
+        animation: fadeTexto;
+        animation-timeline: view();
+    }
+
+    .projects-container {
+        animation: fadeTexto;
+        animation-timeline: view(auto, auto);
+    }
+
+    @keyframes fadeTexto {
+        0% {
+            opacity: 0;
+            filter: blur(30px);
+            
+        }
+
+        50% {
+            opacity: 1;
+            filter: blur(0);
+        }
+
+        100% {
+            opacity: 0;
+            filter: blur(30px);
+        
+        }
+    }
+
+    @keyframes objectAnime {
+        0% {
+            opacity: 0;
+            filter: blur(30px);
+            transform: translateX(300px);
+        }
+
+        50% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            filter: blur(30px);
+            transform: translateX(300px);
+            transform: rotate(45deg);
+        }
+    }
 
 }

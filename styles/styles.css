@@ -1,3 +1,10 @@
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -16,6 +23,7 @@ body {
 #main {
     position: absolute;
     width: 100%;
+    height:100vh;
     top: 0;
     z-index: 1;
 
@@ -75,8 +83,8 @@ header {
     font-weight: 800;
     color: white;
     cursor: default;
-    font-size: 6vw;
-    width: 70%;
+    font-size: 7vw;
+    width: 100%;
 
 }
 
@@ -87,20 +95,13 @@ header {
 
 }
 
-#dino {
-    position: absolute;
-    margin-left: 62vw;
-    bottom: 40vh;
-    border-radius: 20px;
+ #cube {
+    position: relative;
+    top: 15px;
+    height: 2.5rem;
+ }
 
-}
 
-#agency {
-    position: absolute;
-    margin-left: 47vw;
-    bottom: 25vh;
-    border-radius: 20px;
-}
 
 #me {
     font-family: "Gelasio", serif;
@@ -123,17 +124,13 @@ header {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    width: 30vw;
-    background-color: #1B262C;
-    position: relative;
-    top: 60px;
-    left: 10.5rem;
+    margin-left: 22.5vw;
+  
+
 }
 
 .section-title h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
@@ -146,8 +143,8 @@ header {
     font-family: 'Gelasio';
     font-weight: 900;
     padding-bottom: 20px;
-    border-bottom: 2px solid white;
-    width: 150%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 120%;
     text-align: center;
 }
 
@@ -161,78 +158,89 @@ header {
 
 
 .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding-bottom: 100px;
 
 }
 
-#first-project,
-#third-project {
+#first-project {
     display: flex;
-    align-items: center;
-    padding-top: 15vh;
-    padding-left: 10vw;
     width: 100%;
-    z-index: 1;
+    justify-content: start;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+
 }
 
-#third-project {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    padding-top: 200px;
+.project {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #second-project {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 135px;
-    grid-column-start: 2;
-    grid-row-start: 2;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: end;
+    text-align: end;
+    margin-top: 200px;
+}
+
+#third-project {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: start;
+    text-align: start;
+    margin-top: 200px;
+}
+
+.project h1 {
+    color: white;
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    font-size: 3.5rem;
 
 }
+
 
 #second-project h1 {
     color: white;
     font-family: 'Gelasio', serif;
     font-weight: 900;
-    font-size: 4rem;
-    width: 80%;
-    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    margin-right: 120px;
 }
 
 #first-project img,
-#second-project img,
 #third-project img {
     height: 17rem;
     border: 3px solid white;
     border-radius: 40px;
     transition: transform 0.8s;
+    margin-left: 100px;
 }
 
+#second-project img {
+    height: 17rem;
+    border: 3px solid white;
+    border-radius: 40px;
+    transition: transform 0.8s;
+    margin-right: 100px;
+}
 
-#first-project h1,
+.project h1,
 #third-project h1 {
-    position: relative;
-    right: 90px;
     color: white;
     font-family: 'Gelasio', serif;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100%;
-    z-index: 2;
+    margin-left: 120px;
 }
-
-#third-project {
-    margin-bottom: 50px;
-}
-
 
 #about {
     display: flex;
@@ -392,6 +400,15 @@ header {
     margin-top: 15px;
 }
 
+.middle-title h1 {
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
 .content span {
     font-size: 1.2rem;
 }
@@ -408,19 +425,29 @@ header {
 
 .skills-list {
     display: flex;
-    gap: 100px;
-    margin-right: 20px;
+ 
 }
 
 .skill-button {
     height: 50px;
-    width: 5.5rem;
-    margin: 10px 10px 5px 0;
+    width: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Rock Salt", cursive;
+    color: #1B262C;
+    padding: 0 20px 0 20px;
     border-radius: 50px;
+    background-color: #0F4C75;
+    border-color: #1a4460;
+    word-break: normal;
+    margin: 10px 20px 0 0;
 }
 
 .list-1 {
     list-style-type: none;
+   
 }
 
 #prev-button {
@@ -480,7 +507,10 @@ footer {
 
 
 @media (max-width: 1020px) {
-
+    #cube {
+        top: 8px;
+        height: 1.5rem;
+    }
 
     #subtitle {
         font-size: 1.5rem;
@@ -502,16 +532,10 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding-top: 100px;
         background-color: #1B262C;
         border: 0;
-    }
-
-    .section-title {
-        text-align: center;
-        width: 100%;
-        position: static;
-        width: 60%;
+        margin: 0;
+        padding: 0;
     }
 
 
@@ -537,43 +561,56 @@ footer {
 
     }
 
+    .section-title {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #section-sub {
+        width: 80%;
+    }
 
-    #first-project,
-    #second-project,
-    #third-project {
+
+    #first-project, 
+    #second-project{
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        margin: 50px 0 50px 0;
+    }
+
+    #first-project img, #first-project h1 {
         margin: 0;
-        padding: 10rem 0 0 0;
-        position: static;
-
     }
 
-    #first-project img,
-    #second-project img,
-    #third-project img {
-        height: 13rem;
-        margin-bottom: 2.5rem;
+    #second-project img, #second-project h1 {
+        margin: 0;
+    
     }
-
-    #first-project h1,
-    #third-project h1,
+    
     #second-project h1 {
-        font-size: 3rem;
-        right: 0;
-        top: 15px;
         width: 100%;
     }
 
-    #second-project {
-        left: 0;
-        top: 0;
+    #third-project img, #third-project h1 {
+        margin: 0
     }
 
     #third-project {
-        margin-bottom: 200px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 50px 0 200px 0;
     }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 50px;
+    }
+
 
     .container-slider {
         justify-content: center;
@@ -584,25 +621,28 @@ footer {
         height: auto;
         width: 90vw;
         padding: 40px;
-        background-image: url("../images/banner.jpg");
         background-size: cover;
+    }
+
+    .middle-card {
+        flex-direction: column-reverse;
+    }
+
+    .middle-title h1{
+        margin-left: 0;
+        margin-bottom: 20px;
+
     }
 
 
     .skills-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-right: 20px;
-        list-style-type: none;
+        display: none;
     }
 
-    .list-1 {
-        display: flex;
-        gap: 10px;
-        list-style-type: none;
-    }
 
+    #JPA {
+        display: none;
+    }
 
 
     .long-card-first {
@@ -628,8 +668,12 @@ footer {
         display: block;
     }
 
+    #next-button2, #prev-button2 {
+        margin: 80px 20px 0px 20px;
+        display: block;
+    }
+
     #prev-button,
-    #prev-button2,
     #prev-button3 {
         margin: 70px 20px 0 0;
         display: block;
