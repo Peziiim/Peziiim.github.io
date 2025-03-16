@@ -15,51 +15,49 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Jacquard+12&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <script src="./scripts/script.js" defer></script>
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <img id="wallpaper" src="./images/wallpaper.png" alt="wallpaper genshin">
-    <div id="main">
-      <header class="header">
-        <div class="info d-flex flex-wrap align-itemns-center justify-content-center justify-content-lg-start">
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center pt-4">
-            <li><a class="about nav-link px-2 text-secondary" href="#about">
+    
+  </head>
+  
+  <body>
+    
+    <div class="wrapper">
+      <img id="wallpaper" src="./images/wallpaper.png" alt="wallpaper genshin">
+      <div id="main">
+        <header class="header">
+          <div class="info d-flex flex-wrap align-itemns-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center pt-4">
+              <li><a class="about nav-link px-2 text-secondary" href="#about">
                 <h4>about me</h4>
               </a></li>
-            <li> <a class="nav-link px-2 text-secondary" href="#projects">
+              <li> <a class="nav-link px-2 text-secondary" href="#projects">
                 <h4>projects</h4>
               </a></li>
-          </ul>
-          <div class="text-end pt-4">
-            <a href="https://github.com/Peziiim">
-              <img class="social-img" src="./images/github.png" alt="github logo"></a>
-            <a id="linkedin" href="https://www.linkedin.com/in/eduardo-oliveira-risse-xavier-2b194634b/">
-              <img class="social-img" src="./images/linkedin.png" alt="linkedln logo"></button></a>
-            <a href="https://www.instagram.com/eduardo.o.xavier/">
-              <img class="social-img" src="./images/instagram.png" alt="instagram logo"></button></a>
-          </div>
-        </div>
-      </header>
-
-      <div class="hero">
+            </ul>
+            <div class="text-end pt-4">
+              <a href="https://github.com/Peziiim">
+                <img class="social-img" src="./images/github.png" alt="github logo"></a>
+                <a id="linkedin" href="https://www.linkedin.com/in/eduardo-oliveira-risse-xavier-2b194634b/">
+                  <img class="social-img" src="./images/linkedin.png" alt="linkedln logo"></button></a>
+                  <a href="https://www.instagram.com/eduardo.o.xavier/">
+                    <img class="social-img" src="./images/instagram.png" alt="instagram logo"></button></a>
+                  </div>
+                </div>
+              </header>
+              
+              <div class="hero">
         <article class="hero-container">
           <h1 id="title">Web Developer</h1>
           <h1><span class="fullstack"></span></h1>
           <h2 id="me">Eduardo Oliveira</h2>
-          <h4 id="subtitle" class="col-6">FullStack Developer & 3D Designer</h4>
+          <h4 id="subtitle" class="col-lg-12 col-6">FullStack Developer & 3D Designer</h4>
         </article>
       </div>
       <div class="hero-images">
 
-
+        
       </div>
     </div>
-
-    <div class="wrap"> 
+    
     <div id="projects">
       <div class="projects-container">
         <div class="section-title">
@@ -80,15 +78,15 @@
         </div>
       </div>
     </div>
-  </div>
-
-
+    
+    
+    
     <div class="logo">
       <img class="logo-img" src="./images/logo.png" alt=" paimon logo">
     </div>
-
-
-
+    
+    
+    
     <section id="about">
       <div class="about-me">
         <h1>About me</h1>
@@ -99,87 +97,107 @@
         </div>
       </div>
       <div class="container-about d-flex justify-content-center">
-        <div class="container-slider long-card d-flex justify-content-center justify-content-lg-end">
-          <div class="d-flex justify-content-end align-itemns-center">
-            <button id="prev-button" class="func-btn"> <img src="./images/arrowleft.png" alt="previuous button"></button>
+        <div class="container-slider long-card-first long-card d-flex justify-content-center justify-content-lg-end">
+          <div class="d-flex justify-content-lg-end justify-content-center align-itemns-center">
+            <button id="prev-button" class="func-btn-prev"> <img src="./images/arrowleft.png"
+              alt="previous button"></button>
             <div class="photos">
               <img id="my-photo" class="slider on" src="./images/eu.png" alt="photo of me">
               <img id="my-dog" class="slider" src="./images/dog.png" alt="photo of my dog">
             </div>
-            <button id="next-button" class="func-btn"><img src="./images/arrowright.png" alt="next button"></button>
+            <button id="next-button" class="func-btn-next"><img src="./images/arrowright.png"
+                alt="next button"></button>
           </div>
           <div class="content">
-            <div class="long-card-title">
-              <h1>About me</h1>
+            <div class="content-title">
+              <h1>About me<span>²</span></h1>
             </div>
-            <div class="long-card-text">
-              <p>Lorem ipsum afdwsaefgwsftgwerfdaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p>My name is Eduardo Oliveira, i am an 18-year-old student currently enrolled at IFSP, in pursuit of a degree in Systems Analysis and Development. Alongside my formal education, i have independently developed my programming skills, accumulating 1 year and 9 months of experience as a self-taught programmer.</p>
+          </div>
+        </div>
+        
+        <div class="container-slider middle-card long-card d-flex justify-content-center justify-content-lg-end">
+          <div class="d-flex justify-content-lg-end justify-content-center align-itemns-center">
+            <button id="prev-button2" class="func-btn-prev"> <img src="./images/arrowleft.png"
+              alt="previous button"></button>
+              <div class="photos p-skill">
+                <img class="slider2 on" src="./images/html5.png" alt="logo of html">
+                <img  class="slider2" src="./images/css.jpg" alt="css logo">
+                <img class="slider2" src="./images/JS.png" alt="Javascript logo">
+                <img  class="slider2" src="./images/Java.jpg" alt="Java logo">
+                <img  class="slider2" src="./images/Spring.jpg" alt="SpringBoot logo">
+              </div>
+              <button id="next-button2" class="func-btn-next"><img src="./images/arrowright.png"
+                alt="next button"></button>
+              </div>
+              <div class="content">
+                <div class="content-title">
+                  <h1>Skills</h1>
+            </div>
+            <div class="skills-list">
+              <ul class="list-1">
+                <li><button class="skill-button"></button></li>
+                <li><button class="skill-button"></button></li>
+                <li><button class="skill-button"></button></li>
+              </ul>
+              <ul class="list-1">
+                <li><button class="skill-button"></button></li>
+                <li><button class="skill-button"></button></li>
+                <li><button class="skill-button"></button></li>
+              </ul>
+              <ul class="list-1">
+                <li><button class="skill-button"></button></li>
+                <li><button class="skill-button"></button></li>
+                <li><button class="skill-button"></button></li>
+              </ul>
             </div>
           </div>
         </div>
-
+        
+        
         <div class="container-slider long-card d-flex justify-content-center justify-content-lg-end">
-          <div class="d-flex justify-content-end align-itemns-center">
-            <button id="prev-button2" class="func-btn"> <img src="./images/arrowleft.png" alt="previuous button"></button>
-            <div class="photos">
-              <img id="my-photo" class="slider2 on" src="./images/eu.png" alt="photo of me">
-              <img id="my-dog" class="slider2" src="./images/dog.png" alt="photo of my dog">
-            </div>
-            <button id="next-button2" class="func-btn"><img src="./images/arrowright.png" alt="next button"></button>
+          <div class="d-flex justify-content-lg-end align-itemns-center">
+            <button id="prev-button3" class="func-btn-prev"> <img src="./images/arrowleft.png"
+              alt="previous button"></button>
+              <div class="photos p-skill">
+                <img class="slider3 on" src="./images/code.jpg" alt="Pc with an IDE opened">
+                <img  class="slider3" src="./images/liyue.jpeg" alt="SpringBoot logo">
+                <img  class="slider3" src="./images/jogando minecraft no pc.jpeg" alt="SpringBoot logo">
+                <img  class="slider3" src="./images/TWD logo.jpeg" alt="Java logo">
+                <img  class="slider3" src="./images/@shittyrestaurant5 · 𝖮𝗇𝖾 𝖯𝗂𝖾𝖼𝖾.jpeg" alt="Luffy of One Piece">
+                <img class="slider3" src="./images/Let me read, it's thrillinng.jpeg" alt="Cat reading a book">
+              </div>
+              <button id="next-button3" class="func-btn-next"><img src="./images/arrowright.png"
+                alt="next button"></button>
           </div>
           <div class="content">
-            <div class="long-card-title">
-              <h1>Skills</h1>
+            <div class="content-title">
+              <h1>Hobbies</h1>
             </div>
-            <div class="long-card-text">
-              <p>Lorem ipsum afdwsaefgwsftgwerfdaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </div>
+            <p>Most of my day is programing, but in my free time i enjoy reading books, watching animes or series, i also love gaming,</p>
           </div>
         </div>
-
-
-
-        <div class="hobbies long-card">
-          <div class="content">
-            <h1>skills</h1>
-          </div>
-          <div class="d-flex justify-content-end align-itemns-center">
-            <button id="prev-button" class="func-btn"> <img src="./images/arrowleft.png" alt="previuous button"></button>
-            <div class="photos">
-              <div class="skill slider2 on">
-                <img src="./images/html.png" alt="html logo">
-              </div>
-              <div class="skill slider2">
-                <img src="./images/css.png" alt="css logo">
-              </div>
-              <div class="skill slider2">
-                <img src="./images/js.png" alt="js logo">
-              </div>
-            </div>
-            <button id="next-button" class="func-btn"><img src="./images/arrowright.png" alt="next button"></button>
-          </div>
-        </div>
+        
+        
       </div>
-
     </section>
-
+    
     <section id="contact">
       <div class="contact-container">
         <h1>Want to work together?</h1>
         <h2>Contact me</h2>
         <a href="https://api.whatsapp.com/send/?phone=5511950861903&text&type=phone_number&app_absent=0"><img
-            src="./images/whatsApp-logo.png" alt="whatsapp logo" width="150"></a>
+          src="./images/whatsApp-logo.png" alt="whatsapp logo" width="150"></a>
+          
+        </div>
+        <div class="footer">
+          <footer> © All Rights reserved to Eduardo Oliveira </footer>
+        </div>
+        
+      </section>
+    </div>
     
-      </div>
-      <div class="footer">
-        <footer> © All Rights reserved to Eduardo Oliveira </footer>
-      </div>
-
-    </section>
-  </div>
-
-</body>
-
-</html>
+    <script src="./scripts/script.js" defer></script>
+  </body>
+  
+  </html>

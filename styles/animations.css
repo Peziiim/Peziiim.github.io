@@ -264,7 +264,7 @@
      }
 
      100% {
-        opacity: .3;
+        opacity: .2;
         transform: scale(.98);
          }
 }
@@ -381,7 +381,7 @@
 }
 
 .long-card:hover {
-    box-shadow: 0px 0px 20px #FFAB5B;
+    box-shadow: 0px 0px 20px rgb(253, 170, 92, 0.4);
     cursor: pointer;
 }
 

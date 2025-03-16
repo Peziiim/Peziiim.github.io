@@ -114,6 +114,7 @@ header {
     font-weight: 900;
     color: white;
     cursor: default;
+    font-size: 2rem;
 }
 
 .section-title {
@@ -121,15 +122,14 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    top: 60px;
-    left: 9rem;
+    text-align: center;
     grid-column-start: 1;
     grid-row-start: 2;
-    margin: 0;
     width: 30vw;
     background-color: #1B262C;
-    z-index: 0;
+    position: relative;
+    top: 60px;
+    left: 10.5rem;
 }
 
 .section-title h1 {
@@ -164,20 +164,17 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    width: 95%;
-    margin-top: 100px;
+    width: 100%;
     padding-bottom: 100px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+
 }
 
 #first-project,
 #third-project {
     display: flex;
-    justify-content: start;
     align-items: center;
     padding-top: 15vh;
-    padding-left: 2vw;
+    padding-left: 10vw;
     width: 100%;
     z-index: 1;
 }
@@ -185,17 +182,29 @@ header {
 #third-project {
     grid-column-start: 1;
     grid-row-start: 3;
+    padding-top: 200px ;
 }
 
 #second-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
-    left: 15vw;
-    top: 40px;
+    top: 135px;
     grid-column-start: 2;
     grid-row-start: 2;
-    flex-direction: row-reverse;
-    padding-top: 15vh;
 
+}
+
+#second-project h1 {
+    color: white;
+    font-family: 'Gelasio', serif;
+    font-weight: 900;
+    font-size: 4rem;
+    width: 80%;
+    text-align: center;
 }
 
 #first-project img,
@@ -282,30 +291,39 @@ header {
     color: white;
     position: relative;
     gap: 50px;
-    top: 20vh;
-    right: 50px;
+    top: 33vh;
+    right: 30vw;
 }
 
 .container-slider {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
-    align-items: center;
-    height: 12rem;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
     box-shadow: 0px 0px 40px black;
-    z-index: 1;
 }
 
 
 .photos {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 12rem;
-    width: 12rem;
+    height: 15.2rem;
+    width: 14rem;
+    border-radius: 10px;
+    border: 5px solid #0e1518;
 }
+
+.p-skill {
+ height: 19rem;
+ width: 18rem;
+ border-left: 5px solid rgb(26, 24, 24);
+}
+
 
 .long-card {
     display: flex;
@@ -313,15 +331,14 @@ header {
     background-color: #1B262C;
     width: 100%;
     margin-top: 20px;
-    padding-top: 10px;
-    box-shadow: 0px 0px 40px black;
+    box-shadow: 0px 0px 40px rgb(19, 19, 19);
     z-index: 1;
 }
 
 
 .slider,
-.slider1,
-.slider2 {
+.slider2,
+.slider3 {
     opacity: 0;
     transition: opacity .2s;
     position: absolute;
@@ -333,8 +350,8 @@ header {
     opacity: 1;
 }
 
-
-.func-btn {
+.func-btn-prev,
+.func-btn-next {
     height: 25px;
     width: 30px;
     border: none;
@@ -342,70 +359,83 @@ header {
     cursor: pointer;
 }
 
-
-.func-btn img {
+.func-btn-next img,
+.func-btn-prev img {
     height: 100%;
     width: 100%;
 }
 
-#next-button {
+.func-btn-next {
     display: none;
 }
 
-.func-btn {
-    margin: 75px 20px 5px 5px;
+.func-btn-prev {
+    margin-top: 110px;
 }
 
 .content {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    word-break: normal;
+    text-align: center;
+    width: 80%;
     color: white;
 }
 
-.content h1 {
+.content-title h1{
     font-family: 'Gelasio', serif;
     font-weight: 900;
     color: white;
     font-size: 2.2rem;
+    margin-top: 15px;
 }
 
-.skills {
-    flex-direction: row-reverse;
+.content span {
+    font-size: 1.2rem;
 }
 
-.long-card-title {
-    float: left;
-    rotate: 270deg;
-    border-bottom: 2px solid grey;
-    background-color: #3b4144;
+.content p {
+    width: 70%;
+    font-weight: 500;
+    word-break: normal;
+}
+
+.middle-card {
+    flex-direction: row;
+}
+
+.skills-list {
+    display: flex;
+    gap: 100px;
+    margin-right: 20px;
+}
+
+.skill-button {
+    height: 50px;
+    width: 5.5rem;
+    margin: 10px 10px 5px 0;
+    border-radius: 50px;
+}
+
+.list-1 {
+    list-style-type: none;
 }
 
 
-.long-card-text {
-    word-break: break-all;
-    width: 80%;
-}
-
-
-.skills #next-button {
-    margin: 90px 5px 5px 20px;
-    display: block;
-}
-
-.skill {
-    position: relative;
-    right: 50px;
-}
-
-.skills .func-btn {
+#prev-button2 {
     display: none;
 }
 
-.hobbies h1 {
-    font-family: 'Gelasio', serif;
-    font-weight: 900;
-    color: white;
+#next-button2 {
+    display: block;
+    margin: 140px 0 0 20px;
+}
+
+#prev-button3 {
+    z-index: 4;
+    display: block;
 }
 
 
@@ -430,6 +460,7 @@ header {
 }
 
 
+
 .footer {
     display: flex;
     justify-content: end;
@@ -443,12 +474,23 @@ footer {
     width: 25%;
 }
 
-@media (max-width: 810px) {
 
-    .long-card-title {
-        float: none;
-        rotate: 360deg;
-        border: 0;
+@media (max-width: 910px) {
+
+
+#subtitle {
+    font-size: 1.5rem;
+}
+
+.content p {
+    width: auto;
+    word-break:normal;
+}
+
+
+
+    .long-card {
+        padding: 10px 0 0 0;
     }
 
     .projects-container {
@@ -456,6 +498,7 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding-top: 100px;
         background-color: #1B262C;
         border: 0;
     }
@@ -490,18 +533,6 @@ footer {
 
     }
 
-    .long-card-text {
-        padding: 0;
-    }
-
-    #line {
-        left: 25%;
-        right: 25%;
-        top: 18vh;
-        width: 50%;
-    }
-
-
 
     #first-project,
     #second-project,
@@ -509,7 +540,9 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 10rem 0 0 0;
+        position: static;
 
     }
 
@@ -517,7 +550,7 @@ footer {
     #second-project img,
     #third-project img {
         height: 13rem;
-
+        margin-bottom: 2.5rem;
     }
 
     #first-project h1,
@@ -526,6 +559,7 @@ footer {
         font-size: 3rem;
         right: 0;
         top: 15px;
+        width: 100%;
     }
 
     #second-project {
@@ -542,14 +576,38 @@ footer {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        gap: 10px;
-        margin: 0;
+        margin: 3rem 0 0 0;
         height: auto;
+        padding: 20px; 
+        background-image: url("../images/banner.jpg");
+        background-size: cover;
+    }
+
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-right: 20px;
+        list-style-type: none;
+    }
+
+    .list-1 {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+
+
+    .long-card-first {
+        margin: 0;
     }
 
     .photos {
         border: 5px solid white;
         border-radius: 20px;
+        width: 80%;
     }
 
     .skills {
@@ -561,25 +619,24 @@ footer {
         padding-top: 10px;
     }
 
-    .text {
-        padding: 0;
-
+    .skill-button {
+        width: 4.5rem;
     }
 
-    .skills .func-btn,
-    .skills #next-button {
-        margin: 70px 20px 5px 20px;
+
+    #next-button,
+    #next-button2,
+    #next-button3 {
+        margin: 70px 0 0px 20px;
         display: block;
     }
 
-
-    #next-button {
-        margin: 70px 5px 5px 20px;
+    #prev-button,
+    #prev-button2,
+    #prev-button3 {
+        margin: 70px 20px 0 0;
         display: block;
-    }
-
-    .func-btn {
-        margin: 70px 20px 5px 5px;
+    
     }
 
     .photos {
@@ -587,18 +644,6 @@ footer {
         width: 10rem;
     }
 
-    .content {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hobbies {
-        flex-direction: column-reverse;
-        padding-top: 10px;
-    }
 
     .pr-button {
         display: none;
