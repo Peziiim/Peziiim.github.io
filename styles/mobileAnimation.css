@@ -238,7 +238,7 @@
     }
 
 
-    .skill-button:active{
+    .skill-button:hover{
         animation-name: change-back;
         animation-duration: .50s;
         animation-iteration-count: 1;
@@ -246,7 +246,7 @@
         animation-fill-mode: forwards;
     }
 
-    .second:active{
+    .second:hover{
         animation-name: change-back;
         animation-duration: .50s;
         animation-iteration-count: 1;
@@ -254,7 +254,7 @@
         animation-fill-mode: forwards;
     }
 
-    .fourth:active{
+    .fourth:hover{
         animation-name: change-back;
         animation-duration: .50s;
         animation-iteration-count: 1;
