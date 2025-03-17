@@ -245,4 +245,20 @@
         animation-direction: normal;
         animation-fill-mode: forwards;
     }
+
+    .second:active{
+        animation-name: change-back;
+        animation-duration: .50s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+
+    .fourth:active{
+        animation-name: change-back;
+        animation-duration: .50s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
 }

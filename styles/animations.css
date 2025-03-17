@@ -449,6 +449,21 @@
         animation-fill-mode: forwards;
     }
 
+    .second:hover{
+        animation-name: change-back;
+        animation-duration: .50s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+
+    .fourth:hover{
+        animation-name: change-back;
+        animation-duration: .50s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
 
     #invite:hover {
         animation-name: light-pulse;
