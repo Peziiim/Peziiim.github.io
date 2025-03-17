@@ -29,6 +29,10 @@ body {
 
 }
 
+.btn-primary {
+    background-color: #1B262C;
+}
+
 .header img {
     height: 3rem;
     width: 2.5rem;
@@ -446,8 +450,44 @@ header {
 }
 
 .list-1 {
-    list-style-type: none;
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    list-style-type: none; 
+}
+
+.second {
+    height: 50px;
+    width: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Rock Salt", cursive;
+    color: #1B262C;
+    padding: 0 20px 0 20px;
+    border-radius: 50px;
+    background-color: #0F4C75;
+    border-color: #1a4460;
+    word-break: normal;
+    margin: 10px 20px 0 0;
+}
+
+.fourth {
+    height: 50px;
+    width: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Rock Salt", cursive;
+    color: #1B262C;
+    padding: 0 20px 0 20px;
+    border-radius: 50px;
+    background-color: #0F4C75;
+    border-color: #1a4460;
+    word-break: normal;
+    margin: 10px 20px 0 0;
 }
 
 #prev-button {
@@ -625,7 +665,7 @@ footer {
     }
 
     .middle-card {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .middle-title h1{
@@ -634,14 +674,72 @@ footer {
 
     }
 
-
     .skills-list {
-        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #first {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+  
+
+    #second, .second {
+        width: 7rem;
+        height: 50px;
+        grid-column-start: 3;
+        grid-row-start: 3;
+        width: 6.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border-color: #1a4460;
+        word-break: normal;
+        margin: 10px 4px 0 4px;
     }
 
 
-    #JPA {
-        display: none;
+    
+    #third {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    
+    #fourth, .fourth {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        height: 50px;
+        width: 6.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border-color: #1a4460;
+        word-break: normal;
+        margin: 10px 4px 0 4px;
+    }
+
+
+    
+    #fifith {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+
+    
+    .skill-button {
+        word-break: break-all;
+        width: 5.5rem;
+        margin: 10px 2px 0 2px;
     }
 
 
@@ -653,11 +751,6 @@ footer {
         border: 5px solid white;
         border-radius: 20px;
         width: 80%;
-    }
-
-
-    .skill-button {
-        width: 4.5rem;
     }
 
 

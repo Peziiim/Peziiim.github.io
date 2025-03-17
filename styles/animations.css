@@ -276,7 +276,7 @@
 
     @keyframes change-back {
         0% {
-            background-color: #184193;
+         background-color: #184193; 
         }
 
         20% {

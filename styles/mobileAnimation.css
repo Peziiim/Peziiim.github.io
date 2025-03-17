@@ -91,6 +91,37 @@
         }
     }
 
+    @keyframes change-back {
+        0% {
+         background-color: #184193; 
+        }
+
+        20% {
+              background-color: #3d578c;
+        }
+
+        
+        40% {
+            background-color: #769dec;
+      }
+
+        60% {
+            background-color: #ecb480;
+            border-color: #ecb480;
+        }
+
+        80% {
+            background-color: #fcab60;
+            border-color: #fcab60;
+        }
+
+        100% {
+            background-color: #e18632;
+            border-color: #ed780b;
+            color: black;
+        }
+    }
+
     .fullstack::before {
         content: "";
         animation: writing-fullstack 7s infinite;
@@ -206,4 +237,12 @@
         }
     }
 
+
+    .skill-button:active{
+        animation-name: change-back;
+        animation-duration: .50s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
 }
