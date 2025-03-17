@@ -576,7 +576,8 @@ footer {
     }
 
     .content p {
-        width: auto;
+        width: 100%;
+        text-align: start;
         word-break: normal;
     }
 
