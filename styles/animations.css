@@ -55,7 +55,7 @@
         }
 
         to {
-            transform: translateY(-100px);
+            transform: translateY(10px);
         }
     }
 
@@ -192,19 +192,19 @@
         }
 
         25% {
-            transform: translateY(10px);
+            transform: translateY(5px);
         }
 
         50% {
-            transform: translateY(15px);
+            transform: translateY(10px);
         }
 
         75% {
-            transform: translateY(20px);
+            transform: translateY(5px);
         }
 
         100% {
-            transform: translateY(25px);
+            transform: translateY(3px);
         }
 
 
@@ -256,7 +256,7 @@
         }
 
         100% {
-            opacity: .2;
+            opacity: .8;
             transform: scale(.98);
         }
     }
@@ -306,29 +306,9 @@
     }
 
 
-    @keyframes light-pulse {
-        0%,
-        50% {
-            text-shadow: 0 0 20px #ed780b;
-           
-        }
-
-
-        51%,
-        100% {
-            text-shadow: 0 0 15px #ed780b;
-           
-        }
-    }
 
     .exposure:hover img {
-        transform: scale(1.07);
-    }
-
-
-
-    #subtitle:hover {
-        text-decoration: line-through;
+        transform: scale(10);
     }
 
 
@@ -368,26 +348,14 @@
 
     }
 
-    .info {
-        animation-name: slide-in;
+
+
+    #me, #subtitle, .hero-container, .info {
+        animation-name: slide-in, visible;
         animation-duration: 2s;
         animation-iteration-count: 1;
         animation-direction: normal;
         animation-fill-mode: forwards;
-    }
-
-
-    #me {
-        animation-name: slide-in;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-    }
-
-    #subtitle {
-        animation-name: visible;
-        animation-duration: 3s;
     }
 
     .nav-link:hover {
@@ -398,17 +366,6 @@
         animation-fill-mode: forwards;
     }
 
-    #red {
-        animation-name: pulse;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-    }
-
-    .card {
-        cursor: pointer;
-    }
 
 
     .long-card {
@@ -422,7 +379,7 @@
 
 
     .project-container:hover> :not(:hover) {
-        transform: scale(1.05);
+        transform: scale(1);
     }
 
     .container-about:hover> :not(:hover) {
