@@ -451,6 +451,13 @@
         animation-timeline: view(auto auto);
     }
 
+   
+    #first-project img {
+        animation-name: slide-in, visible;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
 
     @keyframes fadeTexto {
         0% {
